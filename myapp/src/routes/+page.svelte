@@ -1,8 +1,8 @@
 <script>
   import BannerComponent from "../components/banner/bannerComponent.svelte"
-  import HeaderComponent from "../components/layout/header.svelte"
-  import FooterComponent from "../components/layout/footer.svelte"
-
+  import HeaderComponent from "../components/layout/header/header.svelte"
+  import FooterComponent from "../components/layout/footer/footer.svelte"
+  import "./style.css"  
 
 </script>
 
@@ -14,7 +14,7 @@
 <main>
     <div class="home-root">
         <div class="home-wrapper">
-            <!-- <BannerComponent/> -->
+           <BannerComponent/>
         </div>
     </div>
 </main>

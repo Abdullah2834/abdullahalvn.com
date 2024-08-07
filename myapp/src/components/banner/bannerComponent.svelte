@@ -1,3 +1,3 @@
-<div class="bnr-container">
-    <h1>Banner</h1>
+<div class="bnr-cntr">
+    <h2>Banner</h2>
 </div>
