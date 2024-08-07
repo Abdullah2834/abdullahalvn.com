@@ -1,2 +1,21 @@
-<h1>Welcome to SvelteKit</h1>
-<p>Visit <a href="https://kit.svelte.dev">kit.svelte.dev</a> to read the documentation</p>
+<script>
+  import BannerComponent from "../components/banner/bannerComponent.svelte"
+  import HeaderComponent from "../components/layout/header.svelte"
+  import FooterComponent from "../components/layout/footer.svelte"
+
+
+</script>
+
+<svelte:head>
+    <title>Abdullah Alvan</title>
+</svelte:head>
+
+<HeaderComponent/>
+<main>
+    <div class="home-root">
+        <div class="home-wrapper">
+            <!-- <BannerComponent/> -->
+        </div>
+    </div>
+</main>
+<FooterComponent/>
