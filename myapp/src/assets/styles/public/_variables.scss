@@ -3,6 +3,7 @@
 *{
     --gray: #292F36;
     --cyan: #12F7D6;
+    --cyan2: #98FAEC;
     --orange: #E54F26;
     --blue: #0C73B8;
     --yellow: #E7A020;
@@ -11,4 +12,14 @@
     --red: #DD0031;
     --white: #fff;
     --gray2: #43454D;
+}
+
+@mixin circle ($width,$height,$color){
+    width: $width;
+    height: $height;
+    background-color: $color;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }

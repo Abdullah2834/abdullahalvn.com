@@ -1,0 +1,17 @@
+.ftr-rt{
+    background-color: var(--gray);
+    border-top: 1px solid var(--gray2);
+}
+.ftr-wrp{
+    padding: 16px 0;
+}
+.scm-blk{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 16px;
+}
+.scm-itm{
+    cursor: pointer;
+    @include circle(32px,32px,var(--cyan2));
+}

@@ -2,6 +2,7 @@
 * {
   --gray: #292F36;
   --cyan: #12F7D6;
+  --cyan2: #98FAEC;
   --orange: #E54F26;
   --blue: #0C73B8;
   --yellow: #E7A020;
@@ -259,4 +260,31 @@ h1 {
 .html-tag {
   display: inline-block;
   margin: 0 8px 0 0;
+}
+
+.ftr-rt {
+  background-color: var(--gray);
+  border-top: 1px solid var(--gray2);
+}
+
+.ftr-wrp {
+  padding: 16px 0;
+}
+
+.scm-blk {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 16px;
+}
+
+.scm-itm {
+  cursor: pointer;
+  width: 32px;
+  height: 32px;
+  background-color: var(--cyan2);
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }/*# sourceMappingURL=style.css.map */
