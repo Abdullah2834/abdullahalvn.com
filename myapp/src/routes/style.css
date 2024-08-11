@@ -1,4 +1,39 @@
 @import url("https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;1,100;1,200;1,300;1,400;1,500;1,600;1,700&family=Montserrat:wght@500&family=Noto+Sans:wght@400;500;600;700;800;900&family=Quicksand:wght@500&family=Raleway:wght@300;400&family=Roboto:wght@500&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;1,100;1,200;1,300;1,400;1,500;1,600;1,700&family=Montserrat:wght@500&family=Noto+Sans:wght@400;500;600;700;800;900&family=Quicksand:wght@500&family=Raleway:wght@300;400&family=Roboto:wght@500&family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap");
+.btn {
+  background: var(--white);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  max-width: 236px;
+  width: 100%;
+  padding: 16px 0;
+  border-radius: 32px;
+  margin: 36px 0 0;
+  cursor: pointer;
+  color: var(--gray);
+  transition: background 0.3s ease-in, color 0.3s ease-in, fill 0.3s ease-in;
+}
+.btn span {
+  font-size: 20px;
+  line-height: 24px;
+  font-family: Ubuntu, sans-serif;
+}
+.btn svg {
+  margin: 0 0 0 18px;
+}
+.btn svg path {
+  fill: var(--gray);
+}
+.btn:hover {
+  background: #696969;
+  color: var(--white);
+  transition: background 0.3s ease-out, color 0.3s ease-out, fill 0.3s ease-out;
+}
+.btn:hover svg path {
+  fill: var(--white);
+}
+
 * {
   --gray: #292F36;
   --cyan: #12F7D6;
@@ -11,6 +46,7 @@
   --red: #DD0031;
   --white: #fff;
   --gray2: #43454D;
+  --dark: #1A1E23;
 }
 
 * {
@@ -204,11 +240,142 @@ textarea {
   margin: 0;
 }
 
-.bnr-cntr {
+.bnr-rt {
   background-color: var(--gray);
 }
 
-h1 {
+.bnr-wrpr {
+  max-width: 1792px;
+  padding: 60px 8em 128px;
+  width: 100%;
+  margin: 0 auto;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.prf-cntr {
+  position: relative;
+  width: -moz-max-content;
+  width: max-content;
+}
+
+.profile {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  padding: 60px 24px 0 28px;
+}
+
+h2 {
+  text-align: center;
+  font-size: 117px;
+  font-weight: 400;
+  line-height: 134px;
+  color: var(--cyan2);
+}
+
+.info {
+  text-align: center;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  justify-content: center;
+  margin: 0 0 32px;
+}
+.info h3 {
+  font-size: 32px;
+  line-height: 42px;
+  font-weight: 500;
+  color: var(--white);
+  margin: 16px 0 0;
+}
+.info span {
+  display: block;
+  font-size: 14px;
+  line-height: 18px;
+  color: var(--white);
+}
+
+.contact svg {
+  margin: 0 10px 0 0;
+}
+.contact p, .contact a {
+  display: block;
+  color: var(--white);
+  text-align: left;
+  font-size: 14px;
+  line-height: 18px;
+  margin: 0 0 16px;
+}
+
+.topics {
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 16px;
+}
+.topics span {
+  background-color: var(--cyan);
+  padding: 0 8px;
+  font-size: 14px;
+  line-height: 18px;
+  color: var(--gray);
+  border-radius: 8px;
+}
+
+.txt-blk {
+  margin: -24px 69px 0 128px;
+}
+.txt-blk h1 {
+  font-family: Ubuntu, sans-serif;
+  font-size: 64px;
+  line-height: 72px;
+  color: var(--white);
+  padding: 0 0 0 20px;
+  font-weight: 400;
+}
+.txt-blk h1 span {
+  color: var(--cyan);
+}
+.txt-blk h1 pre {
+  display: inline-block;
+}
+.txt-blk pre {
+  color: var(--cyan);
+  font-size: 14px;
+  line-height: 18px;
+  margin: 0;
+}
+
+.mdl {
+  background-color: var(--dark);
+  padding: 48px 32px 0;
+  border-radius: 80px;
+  box-shadow: 2px 2px 4px 0 rgba(0, 0, 0, 0.25);
+  max-width: 215px;
+  width: 100%;
+}
+
+.mdl-itm {
+  display: flex;
+  align-items: center;
+  margin: 0 0 48px;
+}
+.mdl-itm span {
+  font-size: 48px;
+  line-height: 62px;
+  color: var(--cyan);
+  margin: 0 16px 0 0;
+}
+.mdl-itm p {
+  font-size: 16px;
+  line-height: 20px;
+  color: var(--white);
+}
+
+h3 {
   color: var(--white);
   font-size: 32px;
   line-height: 42px;
@@ -287,4 +454,9 @@ h1 {
   display: flex;
   align-items: center;
   justify-content: center;
+  transition: background 0.3s ease-in;
+}
+.scm-itm:hover {
+  transition: background 0.3s ease-out;
+  background: var(--white);
 }/*# sourceMappingURL=style.css.map */

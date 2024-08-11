@@ -1,3 +1,137 @@
-.bnr-cntr{
+.bnr-rt{
     background-color: var(--gray);
+   
+}
+.bnr-wrpr{
+    max-width: 1792px;
+    padding: 60px 8em 128px;
+    width: 100%;
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.prf-cntr{
+    position: relative;
+    width: max-content;
+    
+}
+
+.profile{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    padding: 60px 24px 0 28px;
+}
+
+h2{
+    text-align: center;
+    font-size: 117px;
+    font-weight: 400;
+    line-height: 134px;
+    color: var(--cyan2);
+}
+
+.info{
+    text-align: center;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
+    margin: 0 0 32px;
+    h3{
+        font-size: 32px;
+        line-height: 42px;
+        font-weight: 500;
+        color: var(--white);
+        margin: 16px 0 0;
+    }
+
+    span{
+       display: block;
+       font-size: 14px;
+       line-height: 18px;
+       color: var(--white);
+    }
+} 
+
+.contact{
+    svg{
+        margin: 0 10px 0 0;
+    }
+    p,a{
+        display: block;
+        color: var(--white);
+        text-align: left;
+        font-size: 14px;
+        line-height: 18px;
+        margin: 0 0 16px;
+    }
+}
+
+.topics{
+   display: flex;
+   align-items: center;
+   flex-wrap: wrap;
+   gap: 16px;
+   span{
+      background-color: var(--cyan);
+      padding: 0 8px;
+      font-size: 14px;
+      line-height: 18px;
+      color: var(--gray);
+      border-radius: 8px;  
+   }
+}
+
+.txt-blk{
+    margin: -24px 69px 0 128px;
+    h1{
+        font-family: Ubuntu, sans-serif;
+        font-size: 64px;
+        line-height: 72px;
+        color: var(--white);
+        padding: 0 0 0 20px;
+        font-weight: 400;
+        span{
+            color: var(--cyan);
+        }
+        
+        pre{
+            display: inline-block;
+        }
+    }
+    pre{
+        color: var(--cyan);
+        font-size: 14px;
+        line-height: 18px;
+        margin: 0;
+    }
+}
+
+.mdl{
+    background-color: var(--dark);
+    padding: 48px 32px 0;
+    border-radius: 80px;
+    box-shadow: 2px 2px 4px 0 rgba(0,0,0,0.25);
+    max-width: 215px;
+    width: 100%;
+}
+.mdl-itm{
+    display: flex;
+    align-items: center;
+    margin: 0 0 48px;
+    span{
+        font-size: 48px;
+        line-height: 62px;
+        color: var(--cyan);
+        margin: 0 16px 0 0;
+    }
+    p{
+        font-size: 16px;
+        line-height: 20px;
+        color: var(--white);
+    }
 }

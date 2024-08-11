@@ -14,4 +14,9 @@
 .scm-itm{
     cursor: pointer;
     @include circle(32px,32px,var(--cyan2));
+    transition: background 0.3s ease-in;
+    &:hover{
+        transition: background 0.3s ease-out;
+        background: var(--white);
+    }
 }
