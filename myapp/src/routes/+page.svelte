@@ -3,6 +3,7 @@
   import HeaderComponent from "../components/layout/header/header.svelte"
   import FooterComponent from "../components/layout/footer/footer.svelte"
   import "./style.css"  
+  import AboutComponent from "../components/about/aboutComponent.svelte";
 
 </script>
 
@@ -15,6 +16,7 @@
     <div class="home-root">
         <div class="home-wrapper">
            <BannerComponent/>
+           <AboutComponent/>
         </div>
     </div>
 </main>

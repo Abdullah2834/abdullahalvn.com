@@ -13,6 +13,7 @@
     --white: #fff;
     --gray2: #43454D;
     --dark: #1A1E23;
+    
 }
 
 @mixin circle ($width,$height,$color){
@@ -23,4 +24,11 @@
     display: flex;
     align-items: center;
     justify-content: center;
+}
+
+pre{
+    color: var(--cyan);
+    font-size: 14px;
+    line-height: 18px;
+    margin: 0;
 }

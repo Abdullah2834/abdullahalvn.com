@@ -1,7 +1,28 @@
 .bnr-rt{
     background-color: var(--gray);
-   
+    
+    .txt-blk{
+        margin: -24px 69px 0 128px;
+        h1{
+            font-family: Ubuntu, sans-serif;
+            font-size: 64px;
+            line-height: 72px;
+            color: var(--white);
+            padding: 0 0 0 20px;
+            font-weight: 400;
+            span{
+                color: var(--cyan);
+            }
+            
+            pre{
+                display: inline-block;
+            }
+        }
+       
+    }
+    
 }
+
 .bnr-wrpr{
     max-width: 1792px;
     padding: 60px 8em 128px;
@@ -86,30 +107,6 @@ h2{
    }
 }
 
-.txt-blk{
-    margin: -24px 69px 0 128px;
-    h1{
-        font-family: Ubuntu, sans-serif;
-        font-size: 64px;
-        line-height: 72px;
-        color: var(--white);
-        padding: 0 0 0 20px;
-        font-weight: 400;
-        span{
-            color: var(--cyan);
-        }
-        
-        pre{
-            display: inline-block;
-        }
-    }
-    pre{
-        color: var(--cyan);
-        font-size: 14px;
-        line-height: 18px;
-        margin: 0;
-    }
-}
 
 .mdl{
     background-color: var(--dark);
@@ -119,6 +116,7 @@ h2{
     max-width: 215px;
     width: 100%;
 }
+
 .mdl-itm{
     display: flex;
     align-items: center;
