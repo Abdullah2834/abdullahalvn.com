@@ -6,21 +6,11 @@
 
 
 .abt-rt{
-    background-image: url("../assets/img/bg.png");
-
-    
+    background-image: url("../assets/img/bg_2x.png");
+    background-repeat: no-repeat;
 }
 
-.bg-img{
-    picture{
-        display: flex;
-    }
-    img{
-        max-width: 100%;
-        width: 100%;
-        object-fit: cover;
-    }
-}
+
 
 .abt-wrp{
     max-width: 1792px;
@@ -48,11 +38,10 @@
     align-items: center;
     justify-content: center;
     .img{
-        border-radius: 16px;
-        overflow: hidden;
         display: inline-flex;
         img{
             object-fit: cover;
+            border-radius: 16px;
         }
     }
 }
@@ -88,7 +77,6 @@
             width: 5px;
             height: 5px;
             transform: rotate(45deg);
-            margin: 0 0 0 2px;
         }
     }
 }

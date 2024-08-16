@@ -1,0 +1,164 @@
+.skl-rt{
+    
+    //background-image: url("../assets/img/Skills.png");
+    //background-repeat: inherit;
+    background: var(--gray);
+    h3{
+        text-align: center;
+        color: var(--cyan);
+        font-family: Ubuntu, Arial, Helvetica, sans-serif;
+        font-weight: 400;
+        font-size: 64px;
+        line-height: 72px;
+        span{
+            position: relative;
+            display: block;
+            margin: 16px auto 0;
+            border-bottom: 2px solid var(--cyan);
+            width: 148px;
+          &::before,&:after{
+            position: absolute;
+            content: "";
+            top: -4px;
+            @include circle(10px,10px,var(--cyan));
+          }
+          &::before{
+            left: 0;
+          }
+          &::after{
+            right: 0;
+          }
+        }
+    }
+
+    p{
+        text-align: center;
+        color: var(--white);
+        font-size: 16px;
+        line-height: 20px;
+        margin: 16px 0 0;
+    }
+}
+
+.skl-wrpr{
+    width: 100%;
+    padding: 128px;
+    position: relative;
+}
+
+.tag{
+    position: absolute;
+    top: 128px;
+    right: 315px;
+    pre{
+        font-size: 168px;
+        font-family: Ubuntu, Arial, Helvetica, sans-serif;
+    }
+}
+
+.cd-itm{
+    margin: 64px auto 0;
+    padding: 16px 24px;
+    background: var(--cyan2);
+    text-align: center;
+    max-width: 384px;
+    width: 100%;
+    border-left: 8px solid var(--blue);
+    border-radius: 8px;
+    
+    span{
+        display: block;
+        font-size: 24px;
+        line-height: 32px;
+        color: var(--gray);
+        margin: 6px 0 0;
+    }
+    p{
+        font-size: 16px;
+        line-height: 20px;
+        color: var(--gray);
+        margin: 8px 0 0;  
+    }
+}
+
+.crl-cntr{
+    max-width: 960px;
+    width: 100%;
+    margin: 90px auto 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    row-gap: 128px;
+    column-gap: 90px;
+}
+
+.crl-blk{
+    max-width: 144px;
+    width: 100%;
+    .crl{
+        @include circle(144px,144px,transparent);
+    }
+    p{
+        font-size: 32px;
+        line-height: 42px;
+        font-weight: 500;
+    }
+    &.HTML{
+        .crl{
+            background-color: var(--orange);
+        }
+        p{
+            color: var(--orange);
+        }
+    }
+    &.CSS{
+        .crl{
+            background-color: var(--blue);
+        }
+        p{
+            color: var(--blue);
+        }
+    }
+    &.JS{
+        .crl{
+            background-color: var(--yellow);    
+        }
+        p{
+            color: var(--yellow);
+        }
+    }
+    &.TS{
+        .crl{
+            background-color: var(--blue3);    
+        }
+        p{
+            color: var(--blue3);
+        }
+    }
+    &.react{
+        .crl{
+            background-color: var(--blue2);    
+        }
+        p{
+            color: var(--blue2);
+        }
+    }
+    &.svelte{
+        .crl{
+            background-color: var(--orange2);    
+        }
+        p{
+            color: var(--orange2);
+        }
+    }
+    &.angular{
+        .crl{
+            background-color: var(--white);    
+        }
+        p{
+            color: var(--red);
+        }
+    }
+}
+

@@ -41,11 +41,11 @@
                 </div>
             </div>
             <picture class="img">
-                <source media="(min-width: 769px)" srcset={`${ASSETS}/img/about.png, ${ASSETS}/img/about_2x.png 2x`} type="image/png">
-                <source media="(min-width: 769px)" srcset={`${ASSETS}/img/about.webp, ${ASSETS}/img/about_2x.webp 2x`} type="image/webp">
+                <source media="(min-width: 769px)" srcset={`${ASSETS}/img/about.png`} type="image/png">
+                <source media="(min-width: 769px)" srcset={`${ASSETS}/img/about.webp`} type="image/webp">
                 <source media="(max-width: 768px)" srcset={`${ASSETS}/img/about_mobile.png, ${ASSETS}/img/about_mobile_2x.png 2x`} type="image/png">
                 <source media="(max-width: 768px)" srcset={`${ASSETS}/img/about_mobile.webp, ${ASSETS}/img/about_mobile_2x.webp 2x`} type="image/webp">        
-                <img src={`${ASSETS}/İmg/bg.jpg`} alt="bg">
+                <img src={`${ASSETS}/img/about.png`} alt="bg">
             </picture>
         </div>          
     </div>
