@@ -1,0 +1,106 @@
+.wrk-rt{
+    background-image: url("../assets/img/works.png");
+    
+    h3{
+        text-align: center;
+        color: var(--cyan);
+        font-family: Ubuntu, Arial, Helvetica, sans-serif;
+        font-weight: 400;
+        font-size: 64px;
+        line-height: 72px;
+        padding: 128px 128px 0;
+        span{
+            position: relative;
+            display: block;
+            margin: 16px auto 0;
+            border-bottom: 2px solid var(--cyan);
+            width: 183px;
+          &::before,&:after{
+            position: absolute;
+            content: "";
+            top: -4px;
+            @include circle(10px,10px,var(--cyan));
+          }
+          &::before{
+            left: 0;
+          }
+          &::after{
+            right: 0;
+          }
+        }
+    }
+    
+    p{
+        text-align: center;
+        color: var(--white);
+        font-size: 16px;
+        line-height: 20px;
+        margin: 16px 0 0;
+        padding: 0 128px 0;
+    }
+
+    .btn{
+        @include circle(72px,72px,var(--gray));
+        position: relative;
+        
+        svg{
+            margin: 0;
+            path{
+                fill: var(--white);
+            }
+        }
+        &:hover{
+           color: var(--dark);
+          
+        }
+        &.left{
+            margin: 64px 64px 0 0;
+        }
+        &.right{
+            margin: 64px 0 0 64px;
+        }
+    }
+}
+
+.sld-wrp{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 0 128px 128px;
+}
+
+.sld-cntr{
+    display: inline-block;
+    overflow: hidden;
+    margin: 64px 0 0;
+    max-width: 655px;
+    width: 100%;
+}
+.sld-blk{
+    display: flex;
+   
+    
+    a{
+        display: flex;
+        align-items: flex-end;
+        justify-content: center;
+        font-size: 24px;
+        line-height: 42px;
+        color: var(--cyan);
+        width: 100%;
+        border-bottom: 2px solid var(--white);
+        width: max-content;
+        margin: 0 auto 26px;
+        
+    }
+    img{
+        max-width: 100%;
+        object-fit: cover;
+        border-radius: 10px;
+    }
+}
+.sld-itm{
+    min-width: 655px;
+    max-width: 655px;
+    width: 100%;
+}

@@ -5,6 +5,7 @@
   import FooterComponent from "../components/layout/footer/footer.svelte"
   import AboutComponent from "../components/about/aboutComponent.svelte"
   import SkillsComponent from "../components/skills/skillsComponent.svelte"
+  import WorksComponent from "../components/works/worksComponent.svelte";
 
 </script>
 
@@ -19,6 +20,7 @@
            <BannerComponent/>
            <AboutComponent/>
            <SkillsComponent/>
+           <WorksComponent/>
         </div>
     </div>
 </main>

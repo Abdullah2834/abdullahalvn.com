@@ -19,6 +19,7 @@
 
 @mixin circle ($width,$height,$color){
     width: $width;
+    min-width: $width;
     height: $height;
     background-color: $color;
     border-radius: 50%;
