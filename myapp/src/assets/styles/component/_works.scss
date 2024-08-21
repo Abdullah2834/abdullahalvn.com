@@ -42,7 +42,8 @@
     .btn{
         @include circle(72px,72px,var(--gray));
         position: relative;
-        
+        transition: box-shadow 0.3s ease-in, background 0.3s ease-in;
+        user-select: none;
         svg{
             margin: 0;
             path{
@@ -51,7 +52,9 @@
         }
         &:hover{
            color: var(--dark);
-          
+           box-shadow: 2px 2px 4px 0 rgba(0,0,0,0.25);
+           background: #3b3b3b;
+           transition: box-shadow 0.3s ease-out, background 0.3s ease-out;
         }
         &.left{
             margin: 64px 64px 0 0;
@@ -59,6 +62,7 @@
         &.right{
             margin: 64px 0 0 64px;
         }
+       
     }
 }
 
@@ -78,8 +82,7 @@
 }
 .sld-blk{
     display: flex;
-   
-    
+    transition: transform 0.3s ease;
     a{
         display: flex;
         align-items: flex-end;
@@ -88,10 +91,14 @@
         line-height: 42px;
         color: var(--cyan);
         width: 100%;
-        border-bottom: 2px solid var(--white);
+        border-bottom: 2px solid var(--gray2);
         width: max-content;
         margin: 0 auto 26px;
-        
+        transition: border-bottom 0.3s ease-in;
+        &:hover{
+            border-bottom: 2px solid var(--white);
+            transition: border-bottom 0.3s ease-out;
+        }
     }
     img{
         max-width: 100%;
@@ -103,4 +110,5 @@
     min-width: 655px;
     max-width: 655px;
     width: 100%;
+    margin: 0 24px 0 0;
 }

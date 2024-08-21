@@ -702,6 +702,10 @@ h2 {
   align-items: center;
   justify-content: center;
   position: relative;
+  transition: box-shadow 0.3s ease-in, background 0.3s ease-in;
+  -webkit-user-select: none;
+     -moz-user-select: none;
+          user-select: none;
 }
 .wrk-rt .btn svg {
   margin: 0;
@@ -711,6 +715,9 @@ h2 {
 }
 .wrk-rt .btn:hover {
   color: var(--dark);
+  box-shadow: 2px 2px 4px 0 rgba(0, 0, 0, 0.25);
+  background: #3b3b3b;
+  transition: box-shadow 0.3s ease-out, background 0.3s ease-out;
 }
 .wrk-rt .btn.left {
   margin: 64px 64px 0 0;
@@ -736,6 +743,7 @@ h2 {
 
 .sld-blk {
   display: flex;
+  transition: transform 0.3s ease;
 }
 .sld-blk a {
   display: flex;
@@ -745,10 +753,15 @@ h2 {
   line-height: 42px;
   color: var(--cyan);
   width: 100%;
-  border-bottom: 2px solid var(--white);
+  border-bottom: 2px solid var(--gray2);
   width: -moz-max-content;
   width: max-content;
   margin: 0 auto 26px;
+  transition: border-bottom 0.3s ease-in;
+}
+.sld-blk a:hover {
+  border-bottom: 2px solid var(--white);
+  transition: border-bottom 0.3s ease-out;
 }
 .sld-blk img {
   max-width: 100%;
@@ -761,6 +774,7 @@ h2 {
   min-width: 655px;
   max-width: 655px;
   width: 100%;
+  margin: 0 24px 0 0;
 }
 
 h3 {
