@@ -67,6 +67,7 @@
     }
 
     const slideFunc = (direction) =>{
+        
         direction === 1 && activeIndex === sliderBlock.children.length - 1 ? 
             activeIndex = 0 : direction === -1 && activeIndex === 0 ?   
                 activeIndex = sliderBlock.children.length - 1 : activeIndex = activeIndex + direction
