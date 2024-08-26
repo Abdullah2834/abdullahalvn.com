@@ -57,6 +57,12 @@ pre {
   margin: 0;
 }
 
+.sf-ar {
+  max-width: 1792px;
+  width: 100%;
+  margin: 0 auto;
+}
+
 * {
   box-sizing: border-box;
 }
@@ -248,6 +254,10 @@ textarea {
   margin: 0;
 }
 
+label {
+  display: block;
+}
+
 .bnr-rt {
   background-color: var(--gray);
 }
@@ -270,10 +280,7 @@ textarea {
 }
 
 .bnr-wrpr {
-  max-width: 1792px;
   padding: 60px 8em 128px;
-  width: 100%;
-  margin: 0 auto;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -393,10 +400,7 @@ h2 {
 }
 
 .abt-wrp {
-  max-width: 1792px;
-  width: 100%;
   padding: 128px 128px 256px;
-  margin: 0 auto;
 }
 .abt-wrp h3 {
   font-family: Ubuntu, sans-serif;
@@ -484,6 +488,182 @@ h2 {
   display: block;
   font-size: 32px;
   line-height: 42px;
+}
+
+.ctct-rt {
+  background: var(--dark);
+}
+.ctct-rt h3 {
+  text-align: center;
+  color: var(--cyan);
+  font-family: Ubuntu, Arial, Helvetica, sans-serif;
+  font-weight: 400;
+  font-size: 64px;
+  line-height: 72px;
+  padding: 128px 128px 0;
+}
+.ctct-rt h3 span {
+  position: relative;
+  display: block;
+  margin: 16px auto 0;
+  border-bottom: 2px solid var(--cyan);
+  width: 228px;
+}
+.ctct-rt h3 span::before, .ctct-rt h3 span:after {
+  position: absolute;
+  content: "";
+  top: -4px;
+  width: 10px;
+  min-width: 10px;
+  height: 10px;
+  background-color: var(--cyan);
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.ctct-rt h3 span::before {
+  left: 0;
+}
+.ctct-rt h3 span::after {
+  right: 0;
+}
+.ctct-rt p {
+  text-align: center;
+  color: var(--white);
+  font-size: 16px;
+  line-height: 20px;
+  margin: 16px 0 0;
+  padding: 0 128px 0;
+}
+.ctct-rt h4 {
+  color: var(--cyan);
+  border-radius: 32px 0 32px 0;
+  border: 2px solid var(--cyan);
+  font-weight: 500;
+  font-size: 32px;
+  line-height: 42px;
+  width: -moz-max-content;
+  width: max-content;
+  margin: 102px auto 64px;
+  padding: 16px 40px;
+  font-family: "IBM Plex Mono", Arial, Helvetica, sans-serif;
+}
+
+.ctct-wrp {
+  padding: 0 128px 64px;
+}
+
+.frm-cntr {
+  margin: 0 auto;
+  max-width: 1120px;
+  width: 100%;
+}
+.frm-cntr label {
+  color: var(--cyan);
+  font-family: "Ubuntu", Arial, Helvetica, sans-serif;
+  font-weight: 300;
+  font-size: 16px;
+  line-height: 18px;
+  margin: 0 0 24px;
+  display: block;
+}
+
+.frm-blk {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.frm-blk .frm-itm {
+  margin: 0 0 0 128px;
+}
+.frm-blk .frm-itm:first-child {
+  margin: 0;
+}
+
+.frm-itm {
+  max-width: 496px;
+  width: 100%;
+}
+
+input[type=text], textarea, input[type=email] {
+  background: var(--dark);
+  outline: none;
+  border: none;
+  border-bottom: 1px solid var(--cyan2);
+  width: 100%;
+  color: var(--white);
+  font-family: "Ubuntu", Arial, Helvetica, sans-serif;
+  font-weight: 300;
+  font-size: 16px;
+  line-height: 18px;
+  padding: 0 8px 8px;
+}
+input[type=text]:focus, input[type=text]:focus-visible, textarea:focus, textarea:focus-visible, input[type=email]:focus, input[type=email]:focus-visible {
+  outline: none;
+}
+
+input::-moz-placeholder, textarea::-moz-placeholder, input::-moz-placeholder {
+  color: var(--white);
+}
+
+input::placeholder, textarea::placeholder, input::placeholder {
+  color: var(--white);
+}
+
+.frm-txt {
+  margin: 64px 0;
+}
+
+.txtArea {
+  white-space: wrap;
+  resize: none;
+  max-height: 100px;
+  padding: 0 10px 8px;
+}
+.txtArea.scroll {
+  overflow-y: auto;
+  overflow-x: hidden;
+}
+.txtArea.scroll::-webkit-scrollbar {
+  display: block;
+}
+.txtArea::-webkit-scrollbar {
+  display: none;
+  width: 5px;
+}
+.txtArea::-webkit-scrollbar-track {
+  background: none;
+}
+.txtArea::-webkit-scrollbar-thumb {
+  background: var(--cyan);
+  border-radius: 26px;
+}
+.txtArea::-webkit-resizer {
+  display: none;
+}
+
+.btn.cyan {
+  background: var(--cyan);
+  font-family: "Ubuntu", Arial, Helvetica, sans-serif;
+  font-size: 20px;
+  line-height: 24px;
+  border: none;
+  font-weight: 400;
+  color: var(--gray);
+  padding: 16px 32px;
+  margin: 0 auto 0;
+  transition: background 0.3s ease-out;
+}
+.btn.cyan svg {
+  margin: 0 0 0 16px;
+}
+.btn.cyan:hover {
+  background: #97f8ea;
+  transition: background 0.3s ease-in;
+}
+.btn.cyan:hover svg path {
+  fill: var(--gray);
 }
 
 .skl-rt {

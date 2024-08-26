@@ -1,0 +1,58 @@
+.ctct-rt{
+    background: var(--dark);
+    h3{
+        text-align: center;
+        color: var(--cyan);
+        font-family: Ubuntu, Arial, Helvetica, sans-serif;
+        font-weight: 400;
+        font-size: 64px;
+        line-height: 72px;
+        padding: 128px 128px 0;
+        span{
+            position: relative;
+            display: block;
+            margin: 16px auto 0;
+            border-bottom: 2px solid var(--cyan);
+            width: 228px;
+          &::before,&:after{
+            position: absolute;
+            content: "";
+            top: -4px;
+            @include circle(10px,10px,var(--cyan));
+          }
+          &::before{
+            left: 0;
+          }
+          &::after{
+            right: 0;
+          }
+        }
+    }
+
+    p{
+        text-align: center;
+        color: var(--white);
+        font-size: 16px;
+        line-height: 20px;
+        margin: 16px 0 0;
+        padding: 0 128px 0;
+    }
+
+    h4{
+      color: var(--cyan);
+      border-radius: 32px 0 32px 0;
+      border: 2px solid var(--cyan);
+      font-weight: 500;
+      font-size: 32px;
+      line-height: 42px;
+      width: max-content;
+      margin: 102px auto 64px;
+      padding: 16px 40px;
+      font-family: "IBM Plex Mono", Arial, Helvetica, sans-serif;
+  }
+}
+
+.ctct-wrp{
+   
+    padding: 0 128px 64px;
+}

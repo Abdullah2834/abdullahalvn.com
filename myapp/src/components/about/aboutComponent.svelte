@@ -4,7 +4,7 @@
 
 </script>
 <div class="abt-rt">
-    <div class="abt-wrp">
+    <div class="abt-wrp sf-ar">
         <div class="scrl-blk">
             <svg width="32" height="44" viewBox="0 0 32 44" fill="#1A1E23" xmlns="http://www.w3.org/2000/svg">
                 <g clip-path="url(#clip0_55_94)">

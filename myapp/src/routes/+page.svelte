@@ -6,6 +6,7 @@
   import AboutComponent from "../components/about/aboutComponent.svelte"
   import SkillsComponent from "../components/skills/skillsComponent.svelte"
   import WorksComponent from "../components/works/worksComponent.svelte";
+  import ContactComponent from "../components/contact/contactComponent.svelte";
 
 </script>
 
@@ -15,13 +16,12 @@
 
 <HeaderComponent/>
 <main>
-    <div class="home-root">
-        <div class="home-wrapper">
-           <BannerComponent/>
-           <AboutComponent/>
-           <SkillsComponent/>
-           <WorksComponent/>
-        </div>
+    <div class="home-rt">
+        <BannerComponent/>
+        <AboutComponent/>
+        <SkillsComponent/>
+        <WorksComponent/>
+        <ContactComponent/>
     </div>
 </main>
 <FooterComponent/>

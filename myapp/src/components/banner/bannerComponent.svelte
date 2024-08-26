@@ -3,7 +3,7 @@
 </script>
 
 <div class="bnr-rt">
-    <div class="bnr-wrpr">
+    <div class="bnr-wrpr sf-ar">
         <div class="prf-cntr">
             <svg width="334" height="534" viewBox="0 0 334 534" fill="none" xmlns="http://www.w3.org/2000/svg">
                 <g filter="url(#filter0_d_1_581)">
@@ -61,7 +61,7 @@
                     </svg>    
                 </div>    
             </div>
-           
+            
         </div>
         <div class="txt-blk">
             <pre>&lt;/h1&gt;</pre>
