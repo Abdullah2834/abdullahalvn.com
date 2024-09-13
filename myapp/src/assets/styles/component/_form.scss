@@ -32,7 +32,11 @@
 .frm-itm{
     max-width: 496px;
     width: 100%;
-    
+    &.err{
+        .txt-err{
+            display: block;
+        }
+    }
 }
 
 input[type="text"],textarea,input[type="email"]{
@@ -59,7 +63,11 @@ input::placeholder,textarea::placeholder,input::placeholder{
 
 .frm-txt{
     margin: 64px 0;
-    
+    &.err{
+        .txt-err{
+            display: block;
+        }
+    }
 }
 
 .txtArea{
@@ -128,3 +136,9 @@ input::placeholder,textarea::placeholder,input::placeholder{
 }
 
 
+.txt-err{
+    display: none;
+    font-size: 12px;
+    line-height: 16px;
+    color: var(--cyan);
+}

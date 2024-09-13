@@ -8,6 +8,10 @@
   import WorksComponent from "../components/works/worksComponent.svelte";
   import ContactComponent from "../components/contact/contactComponent.svelte";
 
+export let form
+
+
+
 </script>
 
 <svelte:head>
@@ -21,7 +25,7 @@
         <AboutComponent/>
         <SkillsComponent/>
         <WorksComponent/>
-        <ContactComponent/>
+        <ContactComponent form={form}/>
     </div>
 </main>
 <FooterComponent/>
