@@ -1011,6 +1011,9 @@ input::placeholder, textarea::placeholder, input::placeholder {
 .nvbr-itm.active {
   background-color: var(--white);
 }
+.nvbr-itm.active svg path {
+  fill: var(--gray);
+}
 
 h3 {
   color: var(--white);

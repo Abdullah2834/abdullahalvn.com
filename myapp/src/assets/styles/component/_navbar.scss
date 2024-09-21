@@ -28,5 +28,10 @@
     }
     &.active{
         background-color: var(--white);
+        svg{
+            path{
+                fill: var(--gray);
+            }
+        }
     }
 }
