@@ -11,7 +11,16 @@
 
   export let form;
 
+  export let homeData = $$props && $$props.data ? $$props.data.homeData : {}
+  export let layoutData = $$props && $$props.data ? $$props.data.layoutData : {}  
 
+
+  let bannerData = homeData.banner
+  let aboutData = homeData.about
+  let skillsData = homeData.skills
+  let worksData = homeData.works
+  let contactData = homeData.contact
+  let headerData = layoutData.header  
 
 </script>
 
@@ -19,16 +28,16 @@
     <title>Abdullah Alvan</title>
 </svelte:head>
 
-<HeaderComponent/>
+<HeaderComponent headerData={headerData}/>
 
 <main>
     <div class="home-rt">
         <NavbarComponent/>
-        <BannerComponent/>
-        <AboutComponent/>
-        <SkillsComponent/>
-        <WorksComponent/>
-        <ContactComponent form={form}/>
+        <BannerComponent bannerData={bannerData}/>
+        <AboutComponent aboutData={aboutData}/>
+        <SkillsComponent skillsData={skillsData}/>
+        <WorksComponent worksData={worksData}/>
+        <ContactComponent form={form} contactData={contactData}/>
     </div>
 </main>
 

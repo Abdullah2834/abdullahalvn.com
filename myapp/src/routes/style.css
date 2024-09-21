@@ -943,7 +943,7 @@ input::placeholder, textarea::placeholder, input::placeholder {
   display: flex;
   transition: transform 0.3s ease;
 }
-.sld-blk a {
+.sld-blk a, .sld-blk span {
   display: flex;
   align-items: flex-end;
   justify-content: center;
@@ -956,9 +956,12 @@ input::placeholder, textarea::placeholder, input::placeholder {
   margin: 0 auto 26px;
   transition: border-bottom 0.3s ease-in;
 }
-.sld-blk a:hover {
+.sld-blk a:hover, .sld-blk span:hover {
   border-bottom: 2px solid var(--white);
   transition: border-bottom 0.3s ease-out;
+}
+.sld-blk span:hover {
+  border-color: var(--gray2);
 }
 .sld-blk img {
   width: 100%;
@@ -1281,6 +1284,13 @@ h3 pre {
   }
 }
 @media screen and (max-width: 796px) {
+  .ctct-rt h3, .skl-wrpr h3, .wrk-rt h3 {
+    font-size: 45px;
+    line-height: 55px;
+  }
+  .ctct-rt h3 span, .skl-wrpr h3 span, .wrk-rt h3 span {
+    margin: 10px auto 0;
+  }
   .hdr-rt {
     position: sticky;
     top: 0;
@@ -1322,7 +1332,7 @@ h3 pre {
   }
   .bnr-wrpr {
     flex-direction: column;
-    padding: 53px 40px 64px;
+    padding: 53px 20px 64px;
   }
   .mdl {
     margin: 64px 0 0;
@@ -1399,9 +1409,8 @@ h3 pre {
   .skl-wrpr {
     padding: 52px 24px 107px;
   }
-  .skl-wrpr h3 {
-    font-size: 64px;
-    line-height: 72px;
+  .skl-wrpr h3 span {
+    width: 130px;
   }
   .crl-cntr {
     row-gap: 82px;
@@ -1416,18 +1425,15 @@ h3 pre {
     flex-direction: column;
   }
   .crl-blk .crl {
-    width: 112px;
-    min-width: 112px;
-    height: 112px;
-  }
-  .crl-blk p {
-    font-size: 32px;
-    line-height: 42px;
+    width: 100px;
+    min-width: 100px;
+    height: 100px;
   }
   .wrk-rt h3 {
     padding: 53px 24px 0;
-    font-size: 64px;
-    line-height: 72px;
+  }
+  .wrk-rt h3 span {
+    width: 140px;
   }
   .wrk-rt .btn {
     width: 36px;
@@ -1450,17 +1456,13 @@ h3 pre {
   .sld-cntr {
     margin: 25px 0 0;
   }
-  .sld-blk a {
-    font-size: 16px;
-    line-height: 20px;
+  .sld-blk a, .sld-blk span {
+    font-size: 18px;
+    line-height: 26px;
     margin: 0 auto 11px;
   }
   .sld-wrp {
     padding: 0 14px 72px;
-  }
-  .ctct-rt h3 {
-    font-size: 64px;
-    line-height: 72px;
   }
   .ctct-rt h4 {
     font-size: 24px;
@@ -1474,8 +1476,15 @@ h3 pre {
   .ctct-wrp {
     padding: 48px 24px;
   }
+  .frm-blk {
+    display: block;
+  }
   .frm-blk .frm-itm {
-    margin: 0 0 0 24px;
+    max-width: inherit;
+    margin: 24px 0 0;
+  }
+  .frm-txt {
+    margin: 32px 0 64px;
   }
   .ftr-rt {
     background-color: var(--dark);
@@ -1494,9 +1503,7 @@ h3 pre {
   .ctct-rt h4 {
     width: 100%;
     text-align: center;
-  }
-  .txt-err {
-    font-size: 8px;
+    padding: 10px 30px;
   }
   .frm-cntr .btn {
     max-width: 234px;

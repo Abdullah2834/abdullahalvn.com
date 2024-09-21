@@ -3,7 +3,8 @@
     import { onDestroy, onMount } from 'svelte';
     import { ASSETS } from './../../constant/path.js';
 
-
+    export let worksData;
+    
     let sliderBlock;
     let activeIndex = 0; 
     let translateValue = 0;
@@ -91,13 +92,13 @@
         if(Math.abs(xDiff) + Math.abs(yDiff) > 10){
             if(Math.abs(xDiff) > Math.abs(yDiff)){
             if(xDiff > 0){
-                slideFunction(1)
+                slideFunc(1)
             }else{
-                slideFunction(-1)
+                slideFunc(-1)
             } 
             }
             xDown = null;
-        yDown = null;
+            yDown = null;
         }
         
     }
@@ -130,13 +131,17 @@
         </span>
         <div class="sld-cntr">
             <div class="sld-blk" bind:this={sliderBlock}>
-                {#each data as item}
+                {#each worksData.projects as item}
                     <div class="sld-itm" bind:this={card}>
-                        <a href={item.siteLink} target="_blank">
+                    {#if item.link}
+                        <a href={item.link} target="_blank">
                             {
-                                item.siteName
+                                item.title
                             } 
                         </a>
+                        {:else}
+                        <span>{item.title}</span>
+                    {/if}
                         <picture>
                             <source media="(min-width: 769px)" 
                                     srcset={`${ASSETS}${item.img.substring(0, item.img.lastIndexOf("."))}.jpg, 

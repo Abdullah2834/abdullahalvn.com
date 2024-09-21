@@ -1,15 +1,20 @@
 <script>
+
   import FormComponent from "./form/formComponent.svelte";
- export let form
+  export let form;
+  export let contactData;
+
 </script>
+
+
 <div class="ctct-rt">
     <div class="ctct-wrp sf-ar">
         <h3>
-            Contact
+            {contactData.title}
             <span></span>
         </h3>
-        <p>I’m currently available for freelance work</p>
-        <h4>Send Me A Message</h4>
-        <FormComponent form={form}/>
+        <p>{contactData.desc}</p>
+        <h4>{contactData.title2}</h4>
+        <FormComponent form={form} formData={contactData.form}/>
     </div>
 </div>

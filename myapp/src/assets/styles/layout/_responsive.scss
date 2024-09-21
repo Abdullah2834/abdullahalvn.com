@@ -219,6 +219,15 @@
 }
 
 @media screen and (max-width: 796px){
+    .ctct-rt,.skl-wrpr,.wrk-rt{
+        h3{
+            font-size: 45px;
+            line-height: 55px;
+            span{
+                margin: 10px auto 0;
+            }
+        }
+    }
     .hdr-rt{
         position: sticky;
         top: 0;
@@ -268,7 +277,7 @@
 
     .bnr-wrpr{
         flex-direction: column;
-        padding: 53px 40px 64px;
+        padding: 53px 20px 64px;
     }
     
     .mdl{
@@ -372,8 +381,9 @@
     .skl-wrpr{
         padding: 52px 24px 107px;
         h3{
-            font-size: 64px;
-            line-height: 72px;
+            span{
+                width: 130px;
+            }
         }
     }
 
@@ -390,22 +400,19 @@
         flex-direction: column;
         
         .crl{
-            width: 112px;
-            min-width: 112px;
-            height: 112px;
+            width: 100px;
+        min-width: 100px;
+        height: 100px;
         }
         
-        p{
-            font-size: 32px;
-            line-height: 42px;
-        }
     }
 
     .wrk-rt{
         h3{
             padding: 53px 24px 0;
-            font-size: 64px;
-            line-height: 72px;
+            span{
+                width: 140px;
+            }
         }
         .btn{
             width: 36px;
@@ -432,9 +439,9 @@
     }
 
     .sld-blk{
-        a{
-            font-size: 16px;
-            line-height: 20px;
+        a,span{
+            font-size: 18px;
+            line-height: 26px;
             margin: 0 auto 11px;
         }
     }
@@ -444,10 +451,7 @@
     }
 
     .ctct-rt{
-        h3{
-            font-size: 64px;
-            line-height: 72px;
-        }
+       
         h4{
             font-size: 24px;
             line-height: 32px;
@@ -463,9 +467,14 @@
         padding: 48px 24px;
     }
     .frm-blk{
+        display: block;
         .frm-itm{
-            margin: 0 0 0 24px;
+            max-width: inherit;
+            margin: 24px 0 0;
         }
+    }
+    .frm-txt{
+        margin: 32px 0 64px;
     }
     .ftr-rt{
         background-color: var(--dark);
@@ -486,11 +495,10 @@
         h4{
             width: 100%;
             text-align: center;
+            padding: 10px 30px;
         }
     }
-    .txt-err{
-        font-size: 8px;
-    }
+   
     .frm-cntr{
         .btn{
             max-width: 234px;

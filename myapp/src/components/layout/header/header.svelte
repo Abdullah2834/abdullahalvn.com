@@ -1,3 +1,7 @@
+<script>
+    export let headerData;
+</script>
+
 <div class="hdr-rt">
     <div class="hdr-wrp">
         <div class="hdr-cntr">

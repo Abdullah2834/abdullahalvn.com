@@ -1,7 +1,8 @@
 <script>
 
   import { ASSETS } from "../../constant/path";
-
+  export let aboutData;
+    
 </script>
 <div class="abt-rt">
     <div class="abt-wrp sf-ar">
@@ -28,24 +29,29 @@
         </div>
         <div class="abt-cntr">
             <div class="txt-blk">
-                <h3>About Me</h3>
+                <h3>{aboutData.title}</h3>
                 <div class="txt-box">
                     <pre>&lt;p&gt;</pre>
-                    <p>
-                        <span class="head">Hello!</span>
-                        My name is Abdullah and I specialize in web development that utilizes <span>HTML</span>, <span>CSS</span>, <span>JS</span>,<span>JS</span>, <span>SVELTE</span> etc. <br><br>
-                       
-                        I have loved coding since high school. During my university years, I improved myself by taking courses from Udemy and at the age of 19, I worked as a front end developer for 2 years in more than 20 projects of different sizes in a good company.
-                    </p>
+                   {#each aboutData.text as text}
+                      {@html text}
+                   {/each}
                     <pre>&lt;/p&gt;</pre>
                 </div>
             </div>
             <picture class="img">
-                <source media="(min-width: 769px)" srcset={`${ASSETS}/img/about.png`} type="image/png">
-                <source media="(min-width: 769px)" srcset={`${ASSETS}/img/about.webp`} type="image/webp">
-                <source media="(max-width: 768px)" srcset={`${ASSETS}/img/about_mobile.png, ${ASSETS}/img/about_mobile_2x.png 2x`} type="image/png">
-                <source media="(max-width: 768px)" srcset={`${ASSETS}/img/about_mobile.webp, ${ASSETS}/img/about_mobile_2x.webp 2x`} type="image/webp">        
-                <img src={`${ASSETS}/img/about.png`} alt="bg">
+                <source media="(min-width: 769px)" 
+                    srcset={`${ASSETS}${aboutData.img.substring(0, aboutData.img.lastIndexOf("."))}.png`} 
+                    type="image/png">
+                <source media="(min-width: 769px)" 
+                    srcset={`${ASSETS}${aboutData.img.substring(0, aboutData.img.lastIndexOf("."))}.webp`} 
+                    type="image/webp">
+                <source media="(max-width: 768px)" 
+                    srcset={`${ASSETS}${aboutData.img_mobile.substring(0, aboutData.img_mobile.lastIndexOf("."))}.png, ${ASSETS}${aboutData.img_mobile.substring(0, aboutData.img_mobile.lastIndexOf("."))}_2x.png 2x`}  
+                    type="image/png">
+                <source media="(max-width: 768px)" 
+                srcset={`${ASSETS}${aboutData.img_mobile.substring(0, aboutData.img_mobile.lastIndexOf("."))}.webp, ${ASSETS}${aboutData.img_mobile.substring(0, aboutData.img_mobile.lastIndexOf("."))}_2x.webp 2x`}  
+                type="image/webp">        
+                <img src={`${ASSETS}${aboutData.img}`} alt="about">
             </picture>
         </div>          
     </div>
