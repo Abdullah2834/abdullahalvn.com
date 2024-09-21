@@ -1,14 +1,15 @@
 <script>
   import "./style.css"  
-  import BannerComponent from "../components/banner/bannerComponent.svelte"
-  import HeaderComponent from "../components/layout/header/header.svelte"
-  import FooterComponent from "../components/layout/footer/footer.svelte"
-  import AboutComponent from "../components/about/aboutComponent.svelte"
-  import SkillsComponent from "../components/skills/skillsComponent.svelte"
+  import BannerComponent from "../components/banner/bannerComponent.svelte";
+  import HeaderComponent from "../components/layout/header/header.svelte";
+  import FooterComponent from "../components/layout/footer/footer.svelte";
+  import AboutComponent from "../components/about/aboutComponent.svelte";
+  import SkillsComponent from "../components/skills/skillsComponent.svelte";
   import WorksComponent from "../components/works/worksComponent.svelte";
   import ContactComponent from "../components/contact/contactComponent.svelte";
+  import NavbarComponent from "../components/navbar/nabvarComponent.svelte";
 
-export let form
+  export let form;
 
 
 
@@ -19,8 +20,10 @@ export let form
 </svelte:head>
 
 <HeaderComponent/>
+
 <main>
     <div class="home-rt">
+        <NavbarComponent/>
         <BannerComponent/>
         <AboutComponent/>
         <SkillsComponent/>
@@ -28,4 +31,5 @@ export let form
         <ContactComponent form={form}/>
     </div>
 </main>
+
 <FooterComponent/>

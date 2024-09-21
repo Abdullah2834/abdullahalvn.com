@@ -1,5 +1,5 @@
 //import {GOOGLE_MAIL,PASSWORD} from "$env/static/private"
-import nodemailer from "nodemailer"
+import nodemailer from "nodemailer";
 
 
 const transporter = nodemailer.createTransport({

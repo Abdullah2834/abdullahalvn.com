@@ -5,7 +5,7 @@
 <div class="bnr-rt">
     <div class="bnr-wrpr sf-ar">
         <div class="prf-cntr">
-            <svg width="334" height="534" viewBox="0 0 334 534" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <svg class="img-prfl" width="334" height="534" viewBox="0 0 334 534" fill="none" xmlns="http://www.w3.org/2000/svg">
                 <g filter="url(#filter0_d_1_581)">
                 <path d="M10 170C10 81.6344 81.6344 10 170 10H330V370C330 458.366 258.366 530 170 530H10V170Z" fill="#292F36"/>
                 <path d="M332 10V8H330H170C80.5299 8 8 80.5299 8 170V530V532H10H170C259.47 532 332 459.47 332 370V10Z" stroke="white" stroke-width="4"/>
@@ -27,7 +27,7 @@
                 <div class="info">
                     <img src={`${ASSETS}/img/Profile.png`} alt="profile">
                     <h3>Abdullah</h3>
-                    <span>Front-end Developer</span>      
+                    <span>Front-End Developer</span>      
                 </div>    
                 <div class="contact">
                     <a href="mailto: abdullahalvan2002@gmail.com" title="Gmail">
@@ -67,8 +67,9 @@
             <pre>&lt;/h1&gt;</pre>
             <h1>Hey<br>
                  I'm <span>Abdullah</span>,<br>
-                 Front-end Developer <pre>&lt;/h1&gt;</pre>
+                 Front-end Developer <pre class="dsktp-txt">&lt;/h1&gt;</pre>
             </h1>
+            <pre class="mbl-txt">&lt;/h1&gt;</pre>
         </div>
         <div class="mdl">
             <div class="mdl-itm">

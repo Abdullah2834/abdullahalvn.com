@@ -101,13 +101,13 @@
         }
     }
     img{
-        max-width: 100%;
+        width: 100%;
         object-fit: cover;
         border-radius: 10px;
     }
 }
 .sld-itm{
-    min-width: 655px;
+    min-width: 100%;
     max-width: 655px;
     width: 100%;
     margin: 0 24px 0 0;

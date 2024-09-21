@@ -1,0 +1,32 @@
+.nvbr-cntr{
+    background-color: var(--dark);
+    border: 1px solid var(--white);
+    border-radius: 40px;
+    padding: 8px 12px;
+    // max-width: 64px;
+    // width: 100%;
+    width: max-content;
+    position: fixed;
+    left: 64px;
+    top: 240px;
+    z-index: 100;
+}
+.nvbr-itm{
+    margin: 24px 0 0;
+    @include circle(40px,40px,transparent);
+    cursor: pointer;
+    &:first-child{
+        margin: 0;
+    }
+    &:hover{
+        background-color: var(--white);
+        svg{
+            path{
+                fill: var(--gray);
+            }
+        }
+    }
+    &.active{
+        background-color: var(--white);
+    }
+}
