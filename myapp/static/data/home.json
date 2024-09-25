@@ -9,6 +9,7 @@
                 "location": "Istanbul, Turkey",
                 "techs": ["HTML","CSS","JS","TS","REACT","SVELTE","ANGULAR"],
                 "btn_text": "Download CV"
+              
             },
             "title":["<h1>Hey<br> I'm <span> Abdullah </span>, <br> Front-end Developer </h1>"],
             "modal":[

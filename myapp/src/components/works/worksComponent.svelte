@@ -13,26 +13,7 @@
     let cardWidth;
     let btn;
     
-    let data = [
-        {
-            "siteLink": "https://www.honda.com.tr/otomobil/honda-type-r-ozellikler",
-            "siteName":"Honda",
-            "img": "/img/works/honda.jpg",
-            "img_mobile":"/img/works/honda_mobile.jpg"
-        },
-        {
-            "siteLink": "https://www.honda.com.tr/otomobil/honda-type-r-ozellikler",
-            "siteName":"Honda",
-            "img": "/img/works/honda.jpg",
-            "img_mobile":"/img/works/honda_mobile.jpg"
-        },
-        {
-            "siteLink": "https://www.honda.com.tr/otomobil/honda-type-r-ozellikler",
-            "siteName":"Honda",
-            "img": "/img/works/honda.jpg",
-            "img_mobile":"/img/works/honda_mobile.jpg"
-        },
-    ]
+   
 
 
     onMount(()=>{

@@ -304,6 +304,9 @@ label {
   width: 100%;
   padding: 60px 24px 0 28px;
 }
+.profile .btn {
+  border: none;
+}
 
 h2 {
   text-align: center;
