@@ -11,7 +11,6 @@
     let xDown, yDown, xUp, yUp;
     let card;
     let cardWidth;
-    let btn;
     
    
 

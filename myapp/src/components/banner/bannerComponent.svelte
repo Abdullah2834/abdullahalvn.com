@@ -3,12 +3,12 @@
     import {ASSETS} from "../../constant/path";
     import {DATA_URL} from "../../constant/url";
     export let bannerData;
-    
+
     let url = DATA_URL;    
-    let fileName = "Abdullah-Alvan-CV-TR.pdf"
+    let fileName = "Abdullah-Alvan-CV-EN.pdf"
     
    
-    console.log("url", url);
+    
     
 
 </script>
@@ -60,7 +60,7 @@
                             <span>{item}</span>
                     {/each}
                 </div>       
-                <a href={`${url}/${fileName}`} download={fileName} class="btn">
+                <a target="_blank" href={`${url}/${fileName}`} class="btn">
                     <span>{bannerData.profile.btn_text}</span>
                     <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
                         <path d="M13 3C13 2.44772 12.5523 2 12 2C11.4477 2 11 2.44772 11 3V12.5858L7.70711 9.29289C7.31658 8.90237 6.68342 8.90237 6.29289 9.29289C5.90237 9.68342 5.90237 10.3166 6.29289 10.7071L11.2929 15.7071C11.6834 16.0976 12.3166 16.0976 12.7071 15.7071L17.7071 10.7071C18.0976 10.3166 18.0976 9.68342 17.7071 9.29289C17.3166 8.90237 16.6834 8.90237 16.2929 9.29289L13 12.5858V3Z" fill="#292F36"/>
