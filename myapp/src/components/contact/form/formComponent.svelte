@@ -113,6 +113,7 @@
                 class="txtArea" 
                 on:input={autoHeightTxtArea,handleChange} 
                 bind:this={txtArea} 
+                id="message"
                 name="message" 
                 placeholder="Enter your needs"
                 maxlength="10000"
