@@ -64,11 +64,11 @@
             
         </div>
         <div class="txt-blk">
-            <pre>&lt;/h1&gt;</pre>
+            <pre>&lt;h1&gt;</pre>
             {#each bannerData.title as item}
                 {@html item}
             {/each}
-            <pre class="mbl-txt">&lt;/h1&gt;</pre>
+            <pre class='dsktp-txt'>&lt;/h1&gt;</pre>
         </div>
         <div class="mdl">
             {#each bannerData.modal as item}

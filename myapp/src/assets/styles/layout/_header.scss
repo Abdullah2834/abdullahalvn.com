@@ -1,5 +1,5 @@
 
-h3{
+h3,pre{
     color: var(--white);
     font-size: 32px;
     line-height: 42px;
@@ -8,6 +8,9 @@ h3{
         font-size: 32px;
         line-height: 42px;
     }
+}
+h3{
+    flex: 1;
 }
 
 .hdr-rt{
@@ -57,5 +60,4 @@ h3{
 .html-tag{
     display: inline-block;
     margin: 0 8px 0 0;
-    
 }

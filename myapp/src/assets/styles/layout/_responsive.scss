@@ -233,6 +233,10 @@
         top: 0;
         left: 0;
         z-index: 10;
+        pre{
+            font-size: 16px;
+            line-height: 20px;
+        }
     }
 
     .hdr-wrp{
@@ -294,9 +298,7 @@
                 line-height: 36px;
                 
             }
-            .dsktp-txt{
-                display: none;
-            }
+           
         }
     }
 
@@ -353,11 +355,7 @@
         }
     }
 
-    .mbl-txt{
-        display: block;
-       
-    }
-
+   
     .abt-wrp{
         padding: 64px 24px 64px;
     }

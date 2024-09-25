@@ -14,11 +14,14 @@
                 color: var(--cyan);
             }
             
-            pre{
-                display: inline-block;
-            }
+            
         }
-       
+        pre{
+            display: inline-block;
+            color: var(--cyan2);
+            font-size: 14px;
+            line-height: 18px;
+        }
     }
     
 }
@@ -131,6 +134,3 @@ h2{
     }
 }
 
-.mbl-txt{
-    display: none;
-}

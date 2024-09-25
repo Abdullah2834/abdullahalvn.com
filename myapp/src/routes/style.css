@@ -277,8 +277,11 @@ label {
 .bnr-rt .txt-blk h1 span {
   color: var(--cyan);
 }
-.bnr-rt .txt-blk h1 pre {
+.bnr-rt .txt-blk pre {
   display: inline-block;
+  color: var(--cyan2);
+  font-size: 14px;
+  line-height: 18px;
 }
 
 .bnr-wrpr {
@@ -383,10 +386,6 @@ h2 {
   font-size: 16px;
   line-height: 20px;
   color: var(--white);
-}
-
-.mbl-txt {
-  display: none;
 }
 
 @keyframes slide {
@@ -1018,15 +1017,19 @@ input::placeholder, textarea::placeholder, input::placeholder {
   fill: var(--gray);
 }
 
-h3 {
+h3, pre {
   color: var(--white);
   font-size: 32px;
   line-height: 42px;
   font-weight: 500;
 }
-h3 pre {
+h3 pre, pre pre {
   font-size: 32px;
   line-height: 42px;
+}
+
+h3 {
+  flex: 1;
 }
 
 .hdr-rt {
@@ -1297,6 +1300,10 @@ h3 pre {
     left: 0;
     z-index: 10;
   }
+  .hdr-rt pre {
+    font-size: 16px;
+    line-height: 20px;
+  }
   .hdr-wrp {
     padding: 24px 24px 0;
   }
@@ -1345,9 +1352,6 @@ h3 pre {
     font-size: 32px;
     line-height: 36px;
   }
-  .bnr-rt .txt-blk .dsktp-txt {
-    display: none;
-  }
   .mdl-itm {
     justify-content: space-between;
   }
@@ -1388,9 +1392,6 @@ h3 pre {
   .profile .btn svg {
     width: 24px;
     height: 24px;
-  }
-  .mbl-txt {
-    display: block;
   }
   .abt-wrp {
     padding: 64px 24px 64px;
