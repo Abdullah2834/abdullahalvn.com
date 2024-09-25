@@ -55,7 +55,7 @@
             </a>
             <a href="https://github.com/Abdullah2834" 
                rel="noreferrer"
-               target="_black"
+               target="_blank"
                title="Abdullah Github" 
                class="scm-itm"
             >

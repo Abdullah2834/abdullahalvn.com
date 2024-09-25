@@ -108,7 +108,7 @@
                 
     </div>
     <div class={`frm-txt ${$errors.message ? "err": ""}`} >
-        <label for="contact" >{formData.msg_text}</label>
+        <label for="message" >{formData.msg_text}</label>
         <textarea 
                 class="txtArea" 
                 on:input={autoHeightTxtArea,handleChange} 
