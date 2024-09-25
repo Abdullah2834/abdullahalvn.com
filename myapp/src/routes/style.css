@@ -486,13 +486,19 @@ h2 {
   color: var(--white);
   margin: 16px 0;
 }
-.txt-box span {
-  color: var(--cyan);
-}
 .txt-box .head {
   display: block;
   font-size: 32px;
   line-height: 42px;
+}
+.txt-box span {
+  color: var(--cyan);
+}
+.txt-box pre {
+  display: inline-block;
+  color: var(--cyan2);
+  font-size: 14px;
+  line-height: 18px;
 }
 
 .ctct-rt {

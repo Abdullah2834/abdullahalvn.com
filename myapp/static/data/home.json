@@ -28,7 +28,7 @@
         },
         "about":{
             "title": "About Me",
-            "text": ["<p><span>Hello!</span> <br>  My name is Abdullah and I specialize in web development that utilizes <span>HTML</span>, <span>CSS</span>, <span>JS</span>, <span>JS</span>, <span>REACT</span>, <span>SVELTE</span> etc. <br><br> I have loved coding since high school. During my university years, I improved myself by taking courses from Udemy and at the age of 19, I worked as a front end developer for 2 years in more than 20 projects of different sizes in a good company.</p>"],
+            "text": ["<p><span class='head'>Hello!</span> My name is Abdullah and I specialize in web development that utilizes <span>HTML</span>, <span>CSS</span>, <span>JS</span>, <span>JS</span>, <span>REACT</span>, <span>SVELTE</span> etc. <br><br> I have loved coding since high school. During my university years, I improved myself by taking courses from Udemy and at the age of 19, I worked as a front end developer for 2 years in more than 20 projects of different sizes in a good company.</p>"],
             "img": "/img/about.png",
             "img_mobile": "/img/about_mobile.png"
         },

@@ -94,13 +94,20 @@
        color: var(--white);
        margin: 16px 0;
     }
-    span{
-        color: var(--cyan);
-    }
     .head{
         display: block;
         font-size: 32px;
         line-height: 42px;
+    }
+    span{
+        color: var(--cyan);
+    }
+    
+    pre{
+        display: inline-block;
+        color: var(--cyan2);
+        font-size: 14px;
+        line-height: 18px;
     }
 }
 
