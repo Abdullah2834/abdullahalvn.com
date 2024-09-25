@@ -1,5 +1,7 @@
+import axios from 'axios';
 import { getHomeData, getLayoutData } from '../services/index.js';
 import { homeStoreData, layoutStoreData } from '../store/store.js';
+
 
 export const load = async ({}) =>{
     let homeData = null;
@@ -16,6 +18,8 @@ export const load = async ({}) =>{
             layoutStoreData.update(result=>result=layoutData)
         }
     })
+
+    
     return{
         homeData,
         layoutData
