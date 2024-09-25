@@ -1,6 +1,5 @@
 import axios from "axios";
 import { DATA_URL} from "../constant/url";
-import * as https from "https";
 
 
 

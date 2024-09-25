@@ -1,4 +1,3 @@
-import axios from 'axios';
 import { getHomeData, getLayoutData } from '../services/index.js';
 import { homeStoreData, layoutStoreData } from '../store/store.js';
 
