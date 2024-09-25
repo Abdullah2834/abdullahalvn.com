@@ -400,7 +400,7 @@ h2 {
   }
 }
 .abt-rt {
-  background-image: url("../assets/img/bg_2x.png");
+  background-image: url("../assets/bg_2x.png");
   background-repeat: no-repeat;
 }
 
@@ -844,7 +844,7 @@ input::placeholder, textarea::placeholder, input::placeholder {
 }
 
 .wrk-rt {
-  background-image: url("../assets/img/works.png");
+  background-image: url("../assets/bg_2x.png");
 }
 .wrk-rt h3 {
   text-align: center;
