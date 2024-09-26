@@ -3,11 +3,10 @@
     import {ASSETS} from "../../constant/path";
     import {DATA_URL} from "../../constant/url";
     export let bannerData;
-
     let url = DATA_URL;    
-    let fileName = "Abdullah-Alvan-CV-EN.pdf"
+    let fileName = "Abdullah-Alvan-CV-EN.pdf";
     
-   
+    
     
     
 

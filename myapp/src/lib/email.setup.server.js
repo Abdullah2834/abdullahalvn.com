@@ -3,12 +3,12 @@ import nodemailer from "nodemailer";
 
 
 const transporter = nodemailer.createTransport({
-  host: "sandbox.smtp.mailtrap.io",
+  host: "smtp.gmail.com",
   port: 587,
   secure: false, // true for port 465, false for other ports
   auth: {
-    user: "1f2e064f748e82",
-    pass: "ea30623c30c4f9",
+    user: "contact@abdullahalvn.com",
+    pass: "spuxspwistqudeyt",
   },
 });
 
