@@ -38,6 +38,7 @@
         <SkillsComponent skillsData={skillsData}/>
         <WorksComponent worksData={worksData}/>
         <ContactComponent form={form} contactData={contactData}/>
+
     </div>
 </main>
 

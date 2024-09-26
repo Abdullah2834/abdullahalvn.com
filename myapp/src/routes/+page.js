@@ -2,6 +2,7 @@ import { getHomeData, getLayoutData } from '../services/index.js';
 import { homeStoreData, layoutStoreData } from '../store/store.js';
 
 
+
 export const load = async ({}) =>{
     let homeData = null;
     let layoutData = null
