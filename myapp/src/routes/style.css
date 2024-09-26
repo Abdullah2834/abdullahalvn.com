@@ -567,10 +567,31 @@ h2 {
   padding: 128px 128px 64px;
 }
 
+.scss-msg {
+  display: none;
+  background-color: var(--cyan);
+  padding: 10px;
+  height: 40px;
+  position: fixed;
+  top: 100px;
+  right: 0;
+  border-radius: 10px 0 0 10px;
+}
+.scss-msg span {
+  display: block;
+  font-size: 16px;
+  line-height: 20px;
+  color: var(--dark);
+  font-weight: 600;
+}
+
 .frm-cntr {
   margin: 0 auto;
   max-width: 1120px;
   width: 100%;
+}
+.frm-cntr.scss .scss-msg {
+  display: block;
 }
 .frm-cntr label {
   color: var(--cyan);
@@ -1507,6 +1528,16 @@ h3 {
   }
   .scm-blk {
     gap: 24px;
+  }
+  .scss-msg {
+    top: auto;
+    bottom: 0;
+    width: 100%;
+    border-radius: 0;
+  }
+  .scss-msg span {
+    text-align: center;
+    font-size: 14px;
   }
 }
 @media screen and (max-width: 480px) {

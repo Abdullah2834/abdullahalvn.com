@@ -1,3 +1,5 @@
+
+
 .ctct-rt{
     background: var(--dark);
     h3{
@@ -55,4 +57,22 @@
 .ctct-wrp{
    
     padding: 128px 128px 64px;
+}
+
+.scss-msg{
+  display: none;
+  background-color: var(--cyan);
+  padding: 10px;
+  height: 40px;
+  position: fixed;
+  top: 100px;
+  right: 0;
+  border-radius: 10px 0 0 10px;
+  span{
+    display: block;
+    font-size: 16px;
+    line-height: 20px;
+    color: var(--dark);
+    font-weight: 600;
+  }
 }

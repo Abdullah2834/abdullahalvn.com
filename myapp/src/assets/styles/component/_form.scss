@@ -2,7 +2,11 @@
     margin: 0 auto;
     max-width: 1120px;
     width: 100%;
-
+    &.scss{
+        .scss-msg{
+            display: block;
+        }
+    }
     label{
         color: var(--cyan);
         font-family: "Ubuntu", Arial, Helvetica, sans-serif;

@@ -486,6 +486,16 @@
     .scm-blk{
         gap: 24px;
     }
+    .scss-msg{
+        top: auto;
+        bottom: 0;
+        width: 100%;
+        border-radius: 0;
+        span{
+            text-align: center;
+            font-size: 14px;
+        }
+    }
 }
 
 @media screen and (max-width: 480px){

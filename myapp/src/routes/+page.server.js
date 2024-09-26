@@ -3,7 +3,7 @@ import { fail } from '@sveltejs/kit';
 
 export const actions = {
   default: async ({request})=>{
-    
+      
       const formData = await request.formData()
       const userMail = formData.get("email")
       const name = formData.get("name")
