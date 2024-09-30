@@ -1,0 +1,4 @@
+name = "abdullahalvn"
+account_id = "7f3e17ce12c6641bdf8e79a65bf19b78"
+workers_dev = false
+route = "abdullahalvn.com/*"
