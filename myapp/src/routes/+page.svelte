@@ -9,7 +9,7 @@
   import ContactComponent from "../components/contact/contactComponent.svelte";
   import NavbarComponent from "../components/navbar/nabvarComponent.svelte";
 
-  export let form;
+  //export let form;
 
   export let homeData = $$props && $$props.data ? $$props.data.homeData : {}
   export let layoutData = $$props && $$props.data ? $$props.data.layoutData : {}  
