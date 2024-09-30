@@ -24,7 +24,6 @@
 		"https-proxy-agent": "^7.0.5",
 		"nodemailer": "^6.9.15",
 		"stream-browserify": "^3.0.0",
-		"svelte-forms-lib": "^2.0.1",
-		"yarn": "^1.22.22"
+		"svelte-forms-lib": "^2.0.1"
 	}
 }
