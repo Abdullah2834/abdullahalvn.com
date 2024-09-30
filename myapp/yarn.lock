@@ -828,7 +828,7 @@ rollup-pluginutils@^2.8.1:
   dependencies:
     estree-walker "^0.6.1"
 
-rollup@^4.20.0, rollup@^4.22.4:
+rollup@^4.20.0:
   version "4.22.5"
   resolved "https://registry.npmjs.org/rollup/-/rollup-4.22.5.tgz"
   integrity sha512-WoinX7GeQOFMGznEcWA1WrTQCd/tpEbMkc3nuMs9BT0CPjMdSjPMTVClwWd4pgSQwJdP65SK9mTCNvItlr5o7w==
