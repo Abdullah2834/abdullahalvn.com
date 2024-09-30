@@ -8,7 +8,6 @@
 		"preview": "vite preview"
 	},
 	"devDependencies": {
-		"@esbuild-plugins/node-globals-polyfill": "^0.2.3",
 		"@sveltejs/adapter-auto": "^3.0.0",
 		"@sveltejs/kit": "^2.0.0",
 		"@sveltejs/vite-plugin-svelte": "^3.0.0",
