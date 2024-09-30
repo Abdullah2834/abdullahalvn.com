@@ -30,6 +30,7 @@
 		"npm": "^10.8.3",
 		"stream-browserify": "^3.0.0",
 		"svelte-forms-lib": "^2.0.1",
-		"wrangler": "^3.78.12"
+		"wrangler": "^3.78.12",
+		"yarn": "^1.22.22"
 	}
 }
