@@ -37,7 +37,7 @@
         <AboutComponent aboutData={aboutData}/>
         <SkillsComponent skillsData={skillsData}/>
         <WorksComponent worksData={worksData}/>
-        <ContactComponent form={form} contactData={contactData}/>
+        <!-- <ContactComponent form={form} contactData={contactData}/> -->
 
     </div>
 </main>

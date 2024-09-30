@@ -1,4 +1,4 @@
 name = "abdullahalvn"
-account_id = "7f3e17ce12c6641bdf8e79a65bf19b78"
+account_id = '7f3e17ce12c6641bdf8e79a65bf19b78'
+route = '/myapp'
 workers_dev = true
-route = "abdullahalvn/*"

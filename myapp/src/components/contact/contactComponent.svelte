@@ -1,7 +1,7 @@
 <script>
 
   import FormComponent from "./form/formComponent.svelte";
-  export let form;
+  //export let form;
   export let contactData;
 
 </script>
@@ -15,6 +15,6 @@
         </h3>
         <p>{contactData.desc}</p>
         <h4>{contactData.title2}</h4>
-        <FormComponent form={form} formData={contactData.form}/>
+        <!-- <FormComponent form={form} formData={contactData.form}/> -->
     </div>
 </div>
