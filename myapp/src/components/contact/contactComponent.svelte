@@ -7,7 +7,7 @@
 </script>
 
 
-<div class="ctct-rt">
+
     <div class="ctct-wrp sf-ar">
         <h3>
             {contactData.title}
@@ -17,4 +17,3 @@
         <h4>{contactData.title2}</h4>
         <!-- <FormComponent form={form} formData={contactData.form}/> -->
     </div>
-</div>

@@ -9,10 +9,7 @@
             <h3>
                {headerData.title}      
             </h3>
-            <div class="nav-blk">
-                <span>{headerData.nav_text}</span>
-                <!-- <span class="lng">EN</span> -->
-            </div>
+            
         </div>
     </div>
 </div>

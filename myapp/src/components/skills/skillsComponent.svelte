@@ -2,7 +2,7 @@
     export let skillsData;
 </script>
 
-<div class="skl-rt">
+
     <div class="skl-wrpr">
         <h3>
             {skillsData.title}
@@ -99,4 +99,3 @@
             <pre>&lt;/&gt;</pre>
         </div>
     </div>
-</div>

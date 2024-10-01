@@ -5,6 +5,7 @@
 
     export let worksData;
     
+    
     let sliderBlock;
     let activeIndex = 0; 
     let translateValue = 0;
@@ -97,7 +98,7 @@
 
 </script>
 
-<div class="wrk-rt">
+
     <h3>
         Works
         <span></span>
@@ -154,4 +155,3 @@
         </span>
     </div>
     
-</div>

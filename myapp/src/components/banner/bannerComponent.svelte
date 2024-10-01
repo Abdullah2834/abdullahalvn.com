@@ -3,6 +3,7 @@
     import {ASSETS} from "../../constant/path";
     import {DATA_URL} from "../../constant/url";
     export let bannerData;
+    
     let url = DATA_URL;    
     let fileName = "Abdullah-Alvan-CV-EN.pdf";
     
@@ -12,7 +13,7 @@
 
 </script>
 
-<div class="bnr-rt">
+
     <div class="bnr-wrpr sf-ar">
         <div class="prf-cntr">
             <svg class="img-prfl" width="334" height="534" viewBox="0 0 334 534" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -86,4 +87,3 @@
         </div>
     </div>
     
-</div>
