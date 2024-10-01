@@ -4,7 +4,7 @@
 	"private": true,
 	"scripts": {
 		"dev": "vite dev --port 3000 ",
-		"build": "vite build",
+		"build": "vite build [sveltekjs] build --output public",
 		"preview": "vite preview"
 	},
 	"devDependencies": {
