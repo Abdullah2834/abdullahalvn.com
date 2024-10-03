@@ -1,31 +1,31 @@
-// import transporter from "../lib/email.setup.server";
-// import { fail } from '@sveltejs/kit';
+import transporter from "../lib/email.setup.server";
+import { fail } from '@sveltejs/kit';
 
-// export const actions = {
-//   default: async ({request})=>{
+export const actions = {
+  default: async ({request})=>{
       
-//       const formData = await request.formData()
-//       const userMail = formData.get("email")
-//       const name = formData.get("name")
-//       const message = formData.get("message")
+      const formData = await request.formData()
+      const userMail = formData.get("email")
+      const name = formData.get("name")
+      const message = formData.get("message")
       
-//       if(!userMail || !name || !message){
-//         return fail(400, {message:"Emtpy field(s)",name,userMail,message})
-//       }
+      if(!userMail || !name || !message){
+        return fail(400, {message:"Emtpy field(s)",name,userMail,message})
+      }
 
-//       transporter.sendMail({
-//       from: userMail,
-//       to: "abdullahalvan2002@gmail.com",
-//       name: name,
-//       subject: "Merhaba",
-//       html: message,
-//     })
+      transporter.sendMail({
+      from: userMail,
+      to: "abdullahalvan2002@gmail.com",
+      name: name,
+      subject: "Merhaba",
+      html: message,
+    })
     
-//     return{
-//       email: userMail,
-//       name: name,
-//       message: message
-//     }
-//   }
+    return{
+      email: userMail,
+      name: name,
+      message: message
+    }
+  }
   
-// }
+}

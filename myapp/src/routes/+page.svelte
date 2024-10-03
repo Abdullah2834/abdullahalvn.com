@@ -9,10 +9,11 @@
   import ContactComponent from "../components/contact/contactComponent.svelte";
   import NavbarComponent from "../components/navbar/nabvarComponent.svelte";
 
-  //export let form;
+  export let form;
 
   export let homeData = $$props && $$props.data ? $$props.data.homeData : {}
   export let layoutData = $$props && $$props.data ? $$props.data.layoutData : {}  
+
 
   //references
 
@@ -20,8 +21,10 @@
   let aboutRef;
   let skillsRef;
   let worksRef;
+  let contactRef;
 
   //data
+
   let bannerData = homeData.banner
   let aboutData = homeData.about
   let skillsData = homeData.skills
@@ -46,11 +49,13 @@
                          aboutId={aboutData.sectionId}
                          skillsId={skillsData.sectionId}
                          worksId={worksData.sectionId}
-
+                         contactId={contactData.sectionId} 
+                           
                          bannerRef={bannerRef}
                          aboutRef={aboutRef}
                          skillsRef={skillsRef}
                          worksRef={worksRef}
+                         contactRef={contactRef}
                                            
         />
         <div class="bnr-rt" bind:this={bannerRef}>
@@ -65,9 +70,9 @@
         <div class="wrk-rt" bind:this={worksRef}>
             <WorksComponent  worksData={worksData}/>    
         </div>
-        <!-- <div class="ctct-rt">
+        <div class="ctct-rt" bind:this={contactRef}>
             <ContactComponent form={form} contactData={contactData}/>
-        </div> -->
+        </div> 
         
 
     </div>

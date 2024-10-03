@@ -1,19 +1,17 @@
 <script>
-  import { afterUpdate,beforeUpdate, onMount } from "svelte";
 
-
-    let activeIndex = 0
- 
-    
+    //references
     export let aboutRef;
     export let skillsRef;
     export let worksRef;
+    export let contactRef;
 
+    //id's
     export let bannerId;
     export let aboutId;
     export let skillsId;
     export let worksId;
-    
+    export let contactId;
 
     let data= [
         {
@@ -28,30 +26,24 @@
         {
             name: ["<svg width='24' height='24' viewBox='0 0 24 24' fill='none' xmlns='http://www.w3.org/2000/svg'><path fill-rule='evenodd' clip-rule='evenodd' d='M13 18H20C21.6569 18 23 16.6569 23 15V5C23 3.34315 21.6569 2 20 2H4C2.34315 2 1 3.34315 1 5V15C1 16.6569 2.34315 18 4 18H11V20H8C7.44772 20 7 20.4477 7 21C7 21.5523 7.44772 22 8 22H16C16.5523 22 17 21.5523 17 21C17 20.4477 16.5523 20 16 20H13V18ZM4 4C3.44772 4 3 4.44772 3 5V15C3 15.5523 3.44772 16 4 16H20C20.5523 16 21 15.5523 21 15V5C21 4.44772 20.5523 4 20 4H4Z' fill='white'/></svg>"]
         },
-        // {
-        //     name: ["<svg width='24' height='24' viewBox='0 0 24 24' fill='none' xmlns='http://www.w3.org/2000/svg'><path fill-rule='evenodd' clip-rule='evenodd' d='M1.00014 5.98266C0.999973 5.99253 0.999957 6.00239 1.00009 6.01225V18C1.00009 19.6523 2.3478 21 4.00009 21H20.0001C21.6524 21 23.0001 19.6523 23.0001 18V6.01236C23.0002 6.00242 23.0002 5.99247 23 5.98251C22.9906 4.33822 21.6465 3 20.0001 3H4.00009C2.35359 3 1.00953 4.3383 1.00014 5.98266ZM3.10666 5.55395C3.27204 5.22692 3.61212 5 4.00009 5H20.0001C20.3881 5 20.7281 5.22692 20.8935 5.55395L12.0001 11.7793L3.10666 5.55395ZM21.0001 7.92066V18C21.0001 18.5477 20.5478 19 20.0001 19H4.00009C3.45237 19 3.00009 18.5477 3.00009 18V7.92066L11.4266 13.8192C11.7709 14.0603 12.2292 14.0603 12.5735 13.8192L21.0001 7.92066Z' fill='white'/></svg>"]
-        // }
+        {
+            name: ["<svg width='24' height='24' viewBox='0 0 24 24' fill='none' xmlns='http://www.w3.org/2000/svg'><path fill-rule='evenodd' clip-rule='evenodd' d='M1.00014 5.98266C0.999973 5.99253 0.999957 6.00239 1.00009 6.01225V18C1.00009 19.6523 2.3478 21 4.00009 21H20.0001C21.6524 21 23.0001 19.6523 23.0001 18V6.01236C23.0002 6.00242 23.0002 5.99247 23 5.98251C22.9906 4.33822 21.6465 3 20.0001 3H4.00009C2.35359 3 1.00953 4.3383 1.00014 5.98266ZM3.10666 5.55395C3.27204 5.22692 3.61212 5 4.00009 5H20.0001C20.3881 5 20.7281 5.22692 20.8935 5.55395L12.0001 11.7793L3.10666 5.55395ZM21.0001 7.92066V18C21.0001 18.5477 20.5478 19 20.0001 19H4.00009C3.45237 19 3.00009 18.5477 3.00009 18V7.92066L11.4266 13.8192C11.7709 14.0603 12.2292 14.0603 12.5735 13.8192L21.0001 7.92066Z' fill='white'/></svg>"]
+        }
     ]
 
  
-    
-
-   
-   
-
     const toggleNavMenu = (index) =>{
-        activeIndex = index
+        
         
         if(typeof window !== "undefined"){
             if(index === bannerId){
-            window.scroll({
-                top: "0",
-                left: "0",
-                behavior: "smooth"
-            })
+                window.scroll({
+                    top: "0",
+                    left: "0",
+                    behavior: "smooth"
+                })
             }else if(index === aboutId){
                 aboutRef.scrollIntoView({behavior:"smooth",block: "start", inline: "center"})
-                
             }
             else if(index === skillsId){
                 skillsRef.scrollIntoView({behavior:"smooth",block: "start", inline: "center"})
@@ -59,11 +51,11 @@
             }else if(index === worksId){
                 worksRef.scrollIntoView({behavior:"smooth",block: "start", inline: "center"})
                
+            }else if(index === contactId){
+                contactRef.scrollIntoView({behavior:"smooth",block: "start", inline: "center"})
             }
         }
-      
-       
-        
+
     }
 
 
@@ -71,7 +63,7 @@
 
 <div class="nvbr-cntr">
     {#each data as item,index}
-         <div  class={`nvbr-itm ${activeIndex === index + 1 ? "active" : ""}`} index={index+1} on:click={()=>toggleNavMenu(index+1)}>
+         <div class={`nvbr-itm`} index={index+1} on:click={()=>toggleNavMenu(index+1)}>
             {@html item.name}
          </div>
     {/each}
