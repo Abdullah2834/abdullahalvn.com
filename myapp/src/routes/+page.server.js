@@ -15,7 +15,7 @@ export const actions = {
 
       transporter.sendMail({
       from: userMail,
-      to: "abdullahalvan2002@gmail.com",
+      to: "contact@abdullahalvn.com",
       name: name,
       subject: "Merhaba",
       html: message,
