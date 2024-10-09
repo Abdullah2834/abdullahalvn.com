@@ -32,7 +32,7 @@
             "about":{
                 "sectionId": 2,
                 "title": "Hakkımda",
-                "text": ["<p><span class='head'>Selamlar!</span> Ben Abdullah, Front-End Developer olarak şu teknolojilerde hakimim: <span>HTML</span>, <span>CSS</span>, <span>JS</span>, <span>JS</span>, <span>REACT</span>, <span>SVELTE</span> <br><br> Üniversite zamanında Udemy'den edindiğim kurs aracılığıyla frontend alanında eğitimler aldım. Kurstan öğrendiklerimle 19 yaşındayken Gülenayva'da işe başladım ve 2 yıl çalıştım. Çalıştığım süre boyunca ReactJS, Angular(TypeScript), Svelte ve Qwik öğrenip birçok büyük/küçük ölçekli (Honda, Vitra, LCW vs.) projelerde yer aldım. Hedefim bu alanda iyi bir seviyeye kadar durmamak.</p>"],
+                "text": ["<p><span class='head'>Selamlar!</span> Ben Abdullah, Front-End Developer olarak şu teknolojilerde hakimim: <span>HTML</span>, <span>CSS</span>, <span>JS</span>, <span>JS</span>, <span>REACT</span>, <span>SVELTE</span> <br><br> Üniversite zamanında Udemy'den edindiğim kurs aracılığıyla frontend alanında eğitimler aldım. Kurstan öğrendiklerimle 19 yaşındayken Gülenayva'da işe başladım ve 2 yıl çalıştım. Çalıştığım süre boyunca ReactJS, Angular(TypeScript), Svelte ve Qwik öğrenip birçok büyük/küçük ölçekli (Honda, Vitra, LCW vs.) projelerde yer aldım.</p>"],
                 "img": "/img/about.png",
                 "img_mobile": "/img/about_mobile.png"
             },
