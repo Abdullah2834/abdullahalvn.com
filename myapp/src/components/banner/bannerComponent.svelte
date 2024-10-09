@@ -2,10 +2,15 @@
  
     import {ASSETS} from "../../constant/path";
     import {DATA_URL} from "../../constant/url";
+    import {page} from "$app/stores";
+
     export let bannerData;
+    export let lang;
+
     
     let url = DATA_URL;    
-    let fileName = "Abdullah-Alvan-CV-EN.pdf";
+    let fileName = lang === "en" ? "Abdullah-Alvan-CV-EN.pdf" : "Abdullah-Alvan-CV-TR.pdf";
+    
     
     
     

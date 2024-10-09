@@ -50,6 +50,7 @@
   --gray2: #43454D;
   --dark: #1A1E23;
   --blue3: #1976D2;
+  --dark2: #111316;
 }
 
 pre {
@@ -514,13 +515,16 @@ h2 {
   font-weight: 400;
   font-size: 64px;
   line-height: 72px;
+  width: -moz-max-content;
+  width: max-content;
+  margin: 0 auto;
 }
 .ctct-rt h3 span {
   position: relative;
   display: block;
   margin: 16px auto 0;
   border-bottom: 2px solid var(--cyan);
-  width: 228px;
+  width: 100%;
 }
 .ctct-rt h3 span::before, .ctct-rt h3 span:after {
   position: absolute;
@@ -723,13 +727,16 @@ input::placeholder, textarea::placeholder, input::placeholder {
   font-weight: 400;
   font-size: 64px;
   line-height: 72px;
+  width: -moz-max-content;
+  width: max-content;
+  margin: 0 auto;
 }
 .skl-rt h3 span {
   position: relative;
   display: block;
   margin: 16px auto 0;
   border-bottom: 2px solid var(--cyan);
-  width: 148px;
+  width: 100%;
 }
 .skl-rt h3 span::before, .skl-rt h3 span:after {
   position: absolute;
@@ -772,6 +779,10 @@ input::placeholder, textarea::placeholder, input::placeholder {
 .tag pre {
   font-size: 168px;
   font-family: Ubuntu, Arial, Helvetica, sans-serif;
+  color: var(--cyan);
+  -webkit-user-select: none;
+     -moz-user-select: none;
+          user-select: none;
 }
 
 .cd-itm {
@@ -884,13 +895,16 @@ input::placeholder, textarea::placeholder, input::placeholder {
   font-size: 64px;
   line-height: 72px;
   padding: 128px 128px 0;
+  width: -moz-max-content;
+  width: max-content;
+  margin: 0 auto;
 }
 .wrk-rt h3 span {
   position: relative;
   display: block;
   margin: 16px auto 0;
   border-bottom: 2px solid var(--cyan);
-  width: 183px;
+  width: 100%;
 }
 .wrk-rt h3 span::before, .wrk-rt h3 span:after {
   position: absolute;
@@ -1064,6 +1078,10 @@ h3 {
 
 .hdr-rt {
   background-color: #292F36;
+  position: sticky;
+  top: 0;
+  left: 0;
+  z-index: 10;
 }
 
 .hdr-cntr {
@@ -1072,14 +1090,19 @@ h3 {
   display: flex;
   align-items: center;
   justify-content: space-between;
-  padding: 0 0 64px;
+  padding: 64px 0;
+  transition: padding 0.3s ease-out;
+}
+.hdr-cntr.sticky {
+  transition: padding 0.3s ease-in;
+  padding: 30px 0;
 }
 
 .hdr-wrp {
   max-width: 1820px;
   width: 100%;
   margin: 0 auto;
-  padding: 64px 8em 0;
+  padding: 0 8em;
 }
 
 .nav-blk {
@@ -1107,6 +1130,62 @@ h3 {
 .html-tag {
   display: inline-block;
   margin: 0 8px 0 0;
+}
+
+.lng-blk {
+  position: relative;
+}
+.lng-blk span {
+  display: block;
+  color: var(--cyan);
+  font-weight: 600;
+  font-size: 20px;
+  line-height: 25px;
+  padding: 5px 14px;
+  background: none;
+  transition: background 0.2s ease-out, border-radius 0.2s ease-out;
+  cursor: pointer;
+  border-radius: 10px;
+  -webkit-user-select: none;
+     -moz-user-select: none;
+          user-select: none;
+}
+.lng-blk span:hover {
+  background: var(--dark2);
+  transition: background 0.2s ease-in;
+}
+.lng-blk.active .lng-itm {
+  background: var(--dark2);
+  transition: background 0.2s ease-in, border-radius 0.2s ease-in;
+  border-radius: 10px 10px 0 0;
+}
+.lng-blk.active .lng-mn {
+  height: 95px;
+  transition: all 0.2s ease-in;
+}
+
+.lng-mn {
+  height: 0;
+  background-color: var(--dark2);
+  position: absolute;
+  width: 52px;
+  top: 30px;
+  left: 0px;
+  border-radius: 0 0 10px 10px;
+  transition: all 0.2s ease-out;
+  overflow-y: hidden;
+  transition: height 0.2s ease-out;
+}
+.lng-mn span {
+  border-radius: 10px;
+  font-size: 20px;
+  line-height: 25px;
+  padding: 5px 10px;
+  margin: 10px 4px 0;
+}
+.lng-mn span:hover {
+  background: var(--dark);
+  transition: background 0.2s ease-in;
 }
 
 .ftr-rt {
@@ -1335,14 +1414,36 @@ h3 {
     line-height: 20px;
   }
   .hdr-wrp {
-    padding: 24px 24px 0;
+    padding: 0 24px 0;
   }
   .nav-blk span {
     font-size: 16px;
     line-height: 20px;
   }
+  .lng-blk span {
+    font-size: 14px;
+    line-height: 20px;
+    padding: 2px 8px;
+  }
+  .lng-blk span:hover {
+    background: none;
+    border-radius: 0;
+  }
+  .lng-blk.active .lng-mn {
+    height: 70px;
+  }
+  .lng-mn {
+    width: 33px;
+    top: 24px;
+  }
+  .lng-mn span {
+    margin: 8px auto 0;
+  }
   .hdr-cntr {
-    padding: 0 0 24px;
+    padding: 24px 0 24px;
+  }
+  .hdr-cntr.sticky {
+    padding: 24px 0 24px;
   }
   h3 {
     font-size: 16px;
@@ -1548,5 +1649,63 @@ h3 {
   }
   .frm-cntr .btn {
     max-width: 234px;
+  }
+}
+@media screen and (max-width: 350px) {
+  .ctc-rt h3, .skl-wrpr h3, .wrk-rt h3 {
+    font-size: 35px;
+    line-height: 40px;
+  }
+  .ctc-rt p, .skl-wrpr p, .wrk-rt p {
+    font-size: 12px;
+  }
+  .cd-itm p {
+    font-size: 10px;
+  }
+  .cd-itm span {
+    font-size: 16px;
+    line-height: 20px;
+  }
+  .profile {
+    padding: 53px 15px 0 18px;
+  }
+  .profile .btn {
+    max-width: 180px;
+    padding: 10px 31px;
+  }
+  .prf-cntr .img-prfl {
+    width: 290px;
+    height: 506px;
+  }
+  .topics span {
+    font-size: 12px;
+  }
+  .info h3 {
+    font-size: 25px;
+  }
+  .contact a, .contact p {
+    font-size: 12px;
+  }
+  .abt-wrp {
+    padding: 50px 24px 50px;
+  }
+  .txt-box p {
+    font-size: 13px;
+    line-height: 17px;
+  }
+  .crl-cntr {
+    row-gap: 30px;
+    -moz-column-gap: 30px;
+         column-gap: 30px;
+    margin: 60px auto 0;
+  }
+  .crl-cntr p {
+    font-size: 15px;
+  }
+  .wrk-rt h3 {
+    padding: 50px 24px 0;
+  }
+  .sld-blk span, .sld-blk a {
+    font-size: 14px;
   }
 }/*# sourceMappingURL=style.css.map */

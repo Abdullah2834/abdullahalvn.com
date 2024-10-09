@@ -1,9 +1,9 @@
 import { getHomeData, getLayoutData } from '../services/index.js';
 import { homeStoreData, layoutStoreData } from '../store/store.js';
 
+let acceptedLangs= ["tr","en"]
 
-
-export const load = async ({}) =>{
+export const load = async ({params,url}) =>{
     let homeData = null;
     let layoutData = null
     await getHomeData().then(result=>{

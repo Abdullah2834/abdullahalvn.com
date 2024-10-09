@@ -9,13 +9,14 @@
         font-weight: 400;
         font-size: 64px;
         line-height: 72px;
-        
+        width: max-content;
+        margin: 0 auto;
         span{
             position: relative;
             display: block;
             margin: 16px auto 0;
             border-bottom: 2px solid var(--cyan);
-            width: 228px;
+            width: 100%;
           &::before,&:after{
             position: absolute;
             content: "";

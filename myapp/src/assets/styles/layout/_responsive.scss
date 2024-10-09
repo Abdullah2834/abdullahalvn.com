@@ -241,7 +241,7 @@
     }
 
     .hdr-wrp{
-        padding: 24px 24px 0;
+        padding: 0 24px 0;
     }
 
     .nav-blk{
@@ -251,8 +251,35 @@
         }
     }
 
+    .lng-blk{
+        span{
+            font-size: 14px;
+            line-height: 20px;
+            padding: 2px 8px;
+            &:hover{
+                background: none;
+                border-radius: 0;
+            }
+        }
+        &.active{
+            .lng-mn{
+                height: 70px;
+            }
+        }
+    }
+
+    .lng-mn{
+        width: 33px;
+        top: 24px;
+        span{
+            margin: 8px auto 0;
+        }
+    }
     .hdr-cntr{
-        padding: 0 0 24px;
+        padding: 24px 0 24px;
+        &.sticky{
+            padding: 24px 0 24px;
+        }
     }
 
     h3{
@@ -512,6 +539,82 @@
     .frm-cntr{
         .btn{
             max-width: 234px;
+        }
+    }
+}
+
+@media screen and (max-width: 350px){
+    .ctc-rt,.skl-wrpr,.wrk-rt{
+        h3{
+            font-size: 35px;
+            line-height: 40px;
+        }
+        p{
+            font-size: 12px;
+        }
+    }
+    .cd-itm{
+        p{
+            font-size: 10px;
+        }
+        span{
+            font-size: 16px;
+            line-height: 20px;
+        }
+    }
+    .profile{
+        padding: 53px 15px 0 18px;
+        .btn{
+            max-width: 180px;
+            padding: 10px 31px;
+        }
+    }
+    .prf-cntr{
+        .img-prfl{
+            width: 290px;
+            height: 506px;
+        }
+    }
+    .topics{
+        span{
+            font-size: 12px;
+        }
+    }
+    .info{
+        h3{
+            font-size: 25px;
+        }
+    }
+    .contact{
+        a,p{
+            font-size: 12px;
+        }
+    }
+    .abt-wrp{
+        padding: 50px 24px 50px;
+    }
+    .txt-box{
+        p{
+            font-size: 13px;
+            line-height: 17px;
+        }
+    }
+    .crl-cntr{
+        row-gap: 30px;
+        column-gap: 30px;
+        margin: 60px auto 0;
+        p{
+            font-size: 15px;
+        }
+    }
+    .wrk-rt{
+        h3{
+            padding: 50px 24px 0;
+        }
+    }
+    .sld-blk{
+        span,a{
+            font-size: 14px;
         }
     }
 }

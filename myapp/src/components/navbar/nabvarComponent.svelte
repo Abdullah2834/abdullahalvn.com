@@ -1,9 +1,11 @@
 <script>
 
     //references
+   
     export let aboutRef;
     export let skillsRef;
     export let worksRef;
+
     //export let contactRef;
 
     //id's
@@ -35,6 +37,7 @@
     const toggleNavMenu = (index) =>{
         
         
+        
         if(typeof window !== "undefined"){
             if(index === bannerId){
                 window.scroll({
@@ -43,7 +46,16 @@
                     behavior: "smooth"
                 })
             }else if(index === aboutId){
-                aboutRef.scrollIntoView({behavior:"smooth",block: "start", inline: "center"})
+                if(window.innerWidth < 797){
+                    aboutRef.scrollIntoView({behavior:"smooth",block: "start", inline: "center"})
+                }else{
+                    window.scroll({
+                       top: aboutRef.offsetTop - 75,
+                       bottom: aboutRef.offsetTop,
+                       left: "0",
+                       behavior: "smooth"
+                    })
+                }
             }
             else if(index === skillsId){
                 skillsRef.scrollIntoView({behavior:"smooth",block: "start", inline: "center"})
@@ -62,7 +74,7 @@
 
 </script>
 
-<div class="nvbr-cntr">
+<div class="nvbr-cntr" >
     {#each data as item,index}
          <div class={`nvbr-itm`} index={index+1} on:click={()=>toggleNavMenu(index+1)}>
             {@html item.name}

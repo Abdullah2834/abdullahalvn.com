@@ -100,10 +100,10 @@
 
 
     <h3>
-        Works
+        {worksData.title}
         <span></span>
     </h3>
-    <p>I had the pleasure of working with these awesome projects</p>
+    <p>{worksData.desc}</p>
     <div class="sld-wrp">
         <span class="btn left" on:click={()=>slideFunc(-1)}>
             <svg width="15" height="25" viewBox="0 0 15 25" fill="none" xmlns="http://www.w3.org/2000/svg">

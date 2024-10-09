@@ -10,12 +10,14 @@
         font-weight: 400;
         font-size: 64px;
         line-height: 72px;
+        width: max-content;
+        margin: 0 auto;
         span{
             position: relative;
             display: block;
             margin: 16px auto 0;
             border-bottom: 2px solid var(--cyan);
-            width: 148px;
+            width: 100%;
           &::before,&:after{
             position: absolute;
             content: "";
@@ -53,6 +55,8 @@
     pre{
         font-size: 168px;
         font-family: Ubuntu, Arial, Helvetica, sans-serif;
+        color: var(--cyan);
+        user-select: none;
     }
 }
 

@@ -1,16 +1,16 @@
 {
     "success":{
-        "header":{
-            "title": "Abdullah Alvan",
-            "nav_text": "Home",
-            "langs": [
-                {
-                    "name": "TR"
-                },
-                {
-                    "name": "EN"
-                }
-            ]
+        "tr":{
+            "header":{
+            "title": "Abdullah Alvan"
         }
+        },
+        "en":{
+            "header":{
+                "title": "Abdullah Alvan"
+            }
+        }
+        
+        
     }
 }

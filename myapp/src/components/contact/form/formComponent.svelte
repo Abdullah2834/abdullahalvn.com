@@ -6,10 +6,12 @@
 
     export let form;
     export let formData;
+    export let lang;
+    
     let txtArea;
     let isMailSend = false;
     let params = {};
- 
+    
    
     onMount(()=>{
         autoHeightTxtArea()
@@ -84,12 +86,17 @@
                 name="name" 
                 id="name"
                 type="text" 
-                placeholder="Enter your name"
+                placeholder= {lang === "tr" ? "Adınızı girin" : "Enter your name"} 
                 maxlength="50"
                 on:input={handleChange}
             >
             <span class="txt-err">
-                Enter your name!
+                {#if lang === "tr"}
+                    Adınızı girin!
+                    {:else}
+                    Enter your name!
+                {/if}
+              
             </span>
             
         </div>
@@ -100,13 +107,17 @@
                 name="email"
                 id="email"
                 type="email" 
-                placeholder="Enter your email"
+                placeholder= {lang === "tr" ? "Mail adresinizi girin" : "Enter your email"} 
                 maxlength="100"
                 autocomplete="off"
                 
                 >   
                 <span class="txt-err">
-                    Enter your email with correctly!
+                    {#if lang === "tr"}
+                        Mail adresinizi doğru biçimde girin!
+                        {:else}
+                        Enter your email with correctly!
+                    {/if}
                 </span>
         </div>
                 
@@ -119,11 +130,15 @@
                 bind:this={txtArea} 
                 id="message"
                 name="message" 
-                placeholder="Enter your needs"
+                placeholder={lang === "tr" ? "Mesajınızı girin" : "Enter your message"}
                 maxlength="10000"
                 ></textarea>
                 <span class="txt-err">
-                    Enter your message!
+                    {#if lang === "tr"}
+                        Mesajınızı girin!    
+                        {:else}
+                        Enter your message!
+                    {/if}
                 </span>
                
     </div>
@@ -135,7 +150,13 @@
     </button>
     {#if isMailSend}
         <div class="scss-msg">
-            <span>Your message has been sent</span>
+            <span>
+                {#if lang === "tr"}
+                    Mesajınız gönderildi
+                    {:else}
+                    Your message has been sent
+                {/if}
+            </span>
         </div>
     {/if}
   
