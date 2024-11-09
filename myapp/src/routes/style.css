@@ -1267,6 +1267,14 @@ h3 {
   .nvbr-cntr {
     left: 24px;
   }
+  .tag {
+    right: 190px;
+  }
+}
+@media screen and (max-width: 1450px) {
+  .tag {
+    right: 100px;
+  }
 }
 @media screen and (max-width: 1370px) {
   h3 {
