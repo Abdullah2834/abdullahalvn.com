@@ -93,6 +93,11 @@ h2{
         font-size: 14px;
         line-height: 18px;
         margin: 0 0 16px;
+        transition: color 0.2s ease-out;
+    }
+    a:hover{
+        color: var(--cyan);
+        transition: color 0.2s ease-in;
     }
 }
 

@@ -349,6 +349,11 @@ h2 {
   font-size: 14px;
   line-height: 18px;
   margin: 0 0 16px;
+  transition: color 0.2s ease-out;
+}
+.contact a:hover {
+  color: var(--cyan);
+  transition: color 0.2s ease-in;
 }
 
 .topics {
@@ -404,7 +409,7 @@ h2 {
   }
 }
 .abt-rt {
-  background-image: url("../assets/bg_2x.png");
+  background-image: url("/assets/img/bg_2x.png");
   background-repeat: no-repeat;
 }
 
@@ -885,7 +890,7 @@ input::placeholder, textarea::placeholder, input::placeholder {
 }
 
 .wrk-rt {
-  background-image: url("../assets/bg_2x.png");
+  background-image: url("/assets/img/works_2x.png");
 }
 .wrk-rt h3 {
   text-align: center;
