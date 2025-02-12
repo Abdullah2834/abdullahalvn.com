@@ -411,6 +411,8 @@ h2 {
 .abt-rt {
   background-image: url("/assets/img/bg_2x.png");
   background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
 }
 
 .abt-wrp {
@@ -891,6 +893,8 @@ input::placeholder, textarea::placeholder, input::placeholder {
 
 .wrk-rt {
   background-image: url("/assets/img/works_2x.png");
+  background-size: cover;
+  background-position: center;
 }
 .wrk-rt h3 {
   text-align: center;
