@@ -3,7 +3,7 @@ import { inject } from '@vercel/analytics';
 import { activeLang, homeStoreData, layoutStoreData } from '../store/store.js';
 import { getHomeData, getLayoutData } from '../services/index.js';
 import { redirect } from '@sveltejs/kit';
-import { injectSpeedInsights } from '@vercel/speed-insights';
+import injectSpeedInsights from '@vercel/speed-insights';
 
  
 
