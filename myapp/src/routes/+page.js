@@ -1,6 +1,5 @@
 import { getHomeData, getLayoutData } from '../services/index.js';
 import { homeStoreData, layoutStoreData } from '../store/store.js';
-import { injectSpeedInsights } from '@vercel/speed-insights';
 
 let acceptedLangs= ["tr","en"]
 
@@ -27,4 +26,3 @@ export const load = async ({params,url}) =>{
     }
 }
 
-injectSpeedInsights();
