@@ -9,8 +9,10 @@ export const load = async ({params,url}) =>{
     await getHomeData().then(result=>{
         if(result && result.data && result.data.success){
             homeData = result.data.success;
-            homeStoreData.update(result=>result=homeData);    
+            homeStoreData.update(result=>result=homeData);            
+               
         }
+         
     })
     await getLayoutData().then(result=>{
         if(result && result.data && result.data.success){

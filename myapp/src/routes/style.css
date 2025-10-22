@@ -1198,6 +1198,9 @@ h3 {
 }
 
 .ftr-rt {
+  position: fixed;
+  bottom: 0;
+  width: 100%;
   background-color: var(--gray);
   border-top: 1px solid var(--gray2);
 }
@@ -1215,9 +1218,9 @@ h3 {
 
 .scm-itm {
   cursor: pointer;
-  width: 32px;
-  min-width: 32px;
-  height: 32px;
+  width: 40px;
+  min-width: 40px;
+  height: 40px;
   background-color: var(--cyan2);
   border-radius: 50%;
   display: flex;
@@ -1228,6 +1231,10 @@ h3 {
 .scm-itm:hover {
   transition: background 0.3s ease-out;
   background: var(--white);
+}
+.scm-itm svg {
+  width: 20px;
+  height: 20px;
 }
 
 @media screen and (max-width: 1700px) {

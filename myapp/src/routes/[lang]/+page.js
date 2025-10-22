@@ -16,6 +16,8 @@ export const load = async ({params,url}) =>{
             homeData = result.data.success[acceptedLangs.indexOf(params.lang) >- 1 ? params.lang : "en"]
             homeStoreData.update(result=>result = homeData);    
         }
+        
+        
     })
 
     await getLayoutData({lang:params.lang}).then((result)=>{

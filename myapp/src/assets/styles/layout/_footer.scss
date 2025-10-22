@@ -1,4 +1,7 @@
 .ftr-rt{
+    position: fixed;
+    bottom: 0;
+    width: 100%;
     background-color: var(--gray);
     border-top: 1px solid var(--gray2);
 }
@@ -13,10 +16,14 @@
 }
 .scm-itm{
     cursor: pointer;
-    @include circle(32px,32px,var(--cyan2));
+    @include circle(40px,40px,var(--cyan2));
     transition: background 0.3s ease-in;
     &:hover{
         transition: background 0.3s ease-out;
         background: var(--white);
+    }
+    svg{
+        width: 20px;
+        height: 20px;
     }
 }
