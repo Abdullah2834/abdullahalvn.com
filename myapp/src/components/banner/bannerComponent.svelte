@@ -9,7 +9,7 @@
 
     
     let url = DATA_URL;    
-    let fileName = lang === "en" ? "Abdullah-Alvan-CV-EN.pdf" : "Abdullah-Alvan-CV-TR.pdf";
+    let fileName = lang === "en" ? "Abdullah-Alvan-CV.pdf" : "Abdullah-Alvan-CV.pdf";
     
     
     
